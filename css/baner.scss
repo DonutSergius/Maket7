@@ -1,0 +1,235 @@
+#baner{
+    background-color: #de5d5d;
+    height: 787px;
+    
+    .baner_img{
+        position:absolute;
+        margin-top: 60px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        -webkit-mask: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0)); 
+    }
+    
+    .baner-block{
+        position: relative;
+        z-index: 200;
+        width: 1170px;
+        margin: 0px auto;
+        height: 787px;
+
+        .title-baner{
+            h1{
+                padding-top: 25%;
+                font-size: 90px;
+                color: #ffffff;
+                font-weight: 400;
+                text-align: center;
+                margin: auto;
+            }
+            
+            .download-btn{
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+
+                p{
+                    margin: 0;
+                    font-size: 30px;
+                    color: #ffffff;
+                    font-weight: 400;
+                    padding: 5px 10px;
+                    border: 3px solid #ffffff;
+                    border-radius: 5px;
+                }
+
+                p:hover{
+                    cursor: pointer;
+                    background-color: rgb(6, 53, 80);
+                    border-color: rgb(6, 53, 80) ;
+                }
+
+                img{
+                    padding-right: 5px;
+                }
+                .appStore{
+                    text-align: right;
+                    margin-right: 15px;
+                }
+                .playStore{
+                    margin-left: 15px;
+                    text-align: left;
+                }
+            }
+        }
+
+        .baner-button{
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 30px;
+            button{
+                width: 12px;
+                height: 12px;
+                margin: 0px 3px;
+                border-radius: 6px;
+                background-color: #ffffff00;
+                border: 2px solid #ffffff;
+            }
+            button:hover{
+                width: 12px;
+                height: 12px;
+                border-radius: 6px;
+                background-color: #ffffff;
+            }
+        }
+    }
+}
+
+@media (max-width: 1520px) {
+    .baner_img {
+        overflow: hidden; 
+        height: auto;
+    }
+}
+
+@media (max-width: 1170px){
+    #baner{
+        height: 600px;
+        .baner_img{
+            margin-top: 0px;
+        }
+
+        .baner-block{
+            height: 600px;
+            width: 800px;
+        }
+    }
+}
+
+@media (max-width: 850px){
+    #baner{
+        height: 500px;
+        .baner_img{
+            width: 900px;
+            top:35%;
+        }
+
+        .baner-block{
+            height: 500px;
+            width: 580px;
+            .title-baner{
+                h1{
+                    font-size: 60px;
+                }
+                .download-btn{
+                    p{
+                        font-size: 18px;
+                    }
+
+                    img{
+                        width: 42px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 600px){
+    #baner{
+        height: 400px;
+        .baner_img{
+            top:35%
+        }
+
+        .baner-block{
+            height: 400px;
+            width: 100%;
+            .title-baner{
+                h1{
+                    font-size: 40px;
+                }
+                .download-btn{
+                    p{
+                        font-size: 18px;
+                        border: 2px solid #ffffff;
+                    }
+
+                    img{
+                        width: 32px;
+                        height: auto;
+                    }
+                    .appStore{
+                        margin-right: 10px;
+                    }
+
+                    .playStore{
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 450px){
+    @media(max-width: 600px){
+        #baner{
+            height: 400px;
+            .baner_img{
+                top:30%;
+                width: 500px;
+                overflow: hidden; 
+            }
+    
+            .baner-block{
+                height: 400px;
+                .title-baner{
+                    h1{
+                        padding-top: 120px;
+                        font-size: 30px;
+                    }
+                    .download-btn{
+                        display: grid;
+                        margin-top: 20px;
+                      
+                        p{
+                            font-size: 16px;
+                            border: 2px solid #ffffff;
+                        }
+    
+                        img{
+                            width: 32px;
+                            height: auto;
+                        }
+                        .appStore{
+                            margin-right: 0px;
+                           margin-bottom: 10px;
+                        }
+    
+                        .playStore{
+                            margin-left: 0px;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.test{
+    width: 100%;
+    height: 200px;
+    background-color: #ffffff;
+    z-index: 200;
+    position: relative;
+}
