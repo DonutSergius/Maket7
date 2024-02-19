@@ -1,0 +1,188 @@
+#share {
+  margin-top: -48px;
+  height: 782px;
+  background-color: #262626;
+}
+#share .share-block {
+  padding-top: 48px;
+  display: flex;
+  height: 782px;
+  width: 1170px;
+  margin: 0 auto;
+}
+#share .share-block .share-img img {
+  max-width: 500px;
+  height: auto;
+  position: relative;
+  z-index: 100;
+  margin-top: 50px;
+  margin-right: 70px;
+}
+#share .share-block .share-text {
+  margin: auto 0px;
+  align-items: center;
+  margin-right: 100px;
+}
+#share .share-block .share-text .share-title {
+  padding-bottom: 20px;
+}
+#share .share-block .share-text .share-title h2 {
+  font-size: 48px;
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+#share .share-block .share-text .share-title p {
+  font-size: 18px;
+  line-height: 27px;
+  color: #aeaeae;
+  font-weight: 400;
+}
+#share .share-block .share-text .share-slider {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#share .share-block .share-text .share-slider .share-dis {
+  width: 100%;
+  display: flex;
+  margin-top: auto;
+  padding: 20px 0px;
+  position: relative;
+}
+#share .share-block .share-text .share-slider .share-dis img {
+  align-self: center;
+  padding-right: 30px;
+}
+#share .share-block .share-text .share-slider .share-dis p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #aeaeae;
+  font-weight: 400;
+}
+#share .share-block .share-text .share-slider-btn {
+  padding: 20px 0px;
+  width: 100%;
+}
+#share .share-block .share-text .share-slider-btn button {
+  width: 12px;
+  height: 12px;
+  margin: 0px 3px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #ffffff;
+}
+#share .share-block .share-text .share-slider-btn button:hover {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+#share .share-block .share-text .share-slider-btn button.active {
+  background-color: #ffffff;
+}
+
+@media (max-width: 1170px) {
+  #share .share-block {
+    width: 900px;
+  }
+  #share .share-block .share-img img {
+    width: 400px;
+    margin-right: 50px;
+  }
+  #share .share-block .share-text {
+    margin-right: 0px;
+  }
+  #share .share-block .share-text img {
+    width: 200;
+    height: 100px;
+  }
+  #share .share-block .share-text .share-slider {
+    width: 450px;
+  }
+}
+@media (max-width: 920px) {
+  #share {
+    height: 1000px;
+  }
+  #share .share-block {
+    height: 1500px;
+    width: 600px;
+    flex-direction: column-reverse;
+  }
+  #share .share-block .share-img {
+    align-self: flex-end;
+    text-align: center;
+    margin: 0px auto;
+  }
+  #share .share-block .share-img img {
+    margin: 0;
+  }
+  #share .share-block .share-text .share-title {
+    padding-top: 60px;
+  }
+  #share .share-block .share-text .share-title h2 {
+    font-size: 40px;
+  }
+  #share .share-block .share-text .share-slider {
+    width: 600px;
+  }
+  #share .share-block .share-text .share-slider .share-dis img {
+    align-self: center;
+    width: 150px;
+    height: 70px;
+  }
+  #share .share-block .share-slider-btn {
+    text-align: center;
+  }
+}
+@media (max-width: 650px) {
+  #share {
+    height: 900px;
+  }
+  #share .share-block {
+    height: 1200px;
+    width: 280px;
+    flex-direction: column-reverse;
+  }
+  #share .share-block .share-img {
+    align-self: flex-end;
+    text-align: center;
+    margin: 0px auto;
+  }
+  #share .share-block .share-img img {
+    width: 280px;
+    margin: 0;
+  }
+  #share .share-block .share-text .share-title {
+    padding-top: 0px;
+  }
+  #share .share-block .share-text .share-title h2 {
+    font-size: 30px;
+  }
+  #share .share-block .share-text .share-title p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #share .share-block .share-text .share-slider {
+    width: 280px;
+  }
+  #share .share-block .share-text .share-slider .share-dis img {
+    align-self: center;
+    width: 120px;
+    height: 50px;
+  }
+  #share .share-block .share-text .share-slider .share-dis p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.test {
+  background-color: black;
+  position: relative;
+  z-index: 200;
+  height: 300px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=share.css.map */

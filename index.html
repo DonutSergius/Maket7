@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="css/style/baner.css" />
     <link rel="stylesheet" href="css/style/why_ama.css" />
     <link rel="stylesheet" href="css/null.css" />
+    <link rel="stylesheet" href="css/style/share.css" />
+
     <title>Ama</title>
   </head>
   <body>
@@ -106,34 +108,153 @@
         </div>
       </div>
     </section>
+    <!--END WHY AMA-->
+    <!---->
+    <!--Share instantly-->
+    <section id="share">
+      <div class="share-block">
+        <div class="share-img">
+          <img src="img/iPhone_Share.png" alt="phone1" />
+        </div>
+        <div class="share-text">
+          <div class="share-title">
+            <h2>Share instantly</h2>
+            <p>
+              Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu
+              ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec
+              gravida.
+            </p>
+          </div>
+          <div class="share-slider">
+            <div class="share-dis">
+              <img src="img/video.png" alt="video" />
+              <p>
+                Mauris euismod ultrices nisl sit amet luctus. Donec volutpat
+                arcu ullamcorper facilisis vulputate. Sed auctor pulvinar.
+                ornare. Donec gravida
+              </p>
+            </div>
+            <div class="share-dis">
+              <img src="img/video.png" alt="video" />
+              <p>
+                Mauris euismod ultrices nisl sit amet luctus. Donec volutpat
+                arcu ullamcorper facilisis vulputate. Sed auctor pulvinar.
+                ornare. Donec gravida
+              </p>
+            </div>
+            <div class="share-dis">
+              <img src="img/video.png" alt="video" />
+              <p>
+                Mauris euismod ultrices nisl sit amet luctus. Donec volutpat
+                arcu ullamcorper facilisis vulputate. Sed auctor pulvinar.
+                ornare. Donec gravida
+              </p>
+            </div>
+          </div>
+          <div class="share-slider-btn">
+            <button id="s_btn1"></button>
+            <button id="s_btn2"></button>
+            <button id="s_btn3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END Share instantly-->
   </body>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script
     type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
   ></script>
-
+  <!--Baner slider-->
   <script>
     $(document).ready(function () {
       $(".baner-slider").slick({
         dots: false,
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 100000,
         speed: 900,
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: false,
       });
+
+      $(".baner-slider").on(
+        "beforeChange",
+        function (event, slick, currentSlide, nextSlide) {
+          var buttonId = "btn" + (nextSlide + 1);
+          setActiveButton(buttonId);
+        }
+      );
+
+      function setActiveButton(buttonId) {
+        $(".slider-btn button").removeClass("active");
+        $("#" + buttonId).addClass("active");
+      }
+
       $("#btn1").click(function () {
         $(".baner-slider").slick("slickGoTo", 0);
+        setActiveButton("btn1");
       });
 
       $("#btn2").click(function () {
         $(".baner-slider").slick("slickGoTo", 1);
+        setActiveButton("btn2");
       });
 
       $("#btn3").click(function () {
         $(".baner-slider").slick("slickGoTo", 2);
+        setActiveButton("btn3");
       });
     });
   </script>
+  <!-- END BanerSlider-->
+  <!---->
+  <!--Share Slider-->
+  <script>
+    $(document).ready(function () {
+      $(".share-slider").slick({
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 100000,
+        speed: 900,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: false,
+      });
+
+      $(".share-slider").on(
+        "beforeChange",
+        function (event, slick, currentSlide, nextSlide) {
+          var buttonId = "s_btn" + (nextSlide + 1);
+          setActiveButton(buttonId);
+        }
+      );
+
+      function setActiveButton(buttonId) {
+        $(".share-slider-btn button").removeClass("active");
+        $("#" + buttonId).addClass("active");
+      }
+
+      $("#s_btn1").click(function () {
+        $(".share-slider").slick("slickGoTo", 0);
+        setActiveButton("s_btn1");
+      });
+
+      $("#s_btn2").click(function () {
+        $(".share-slider").slick("slickGoTo", 1);
+        setActiveButton("s_btn2");
+      });
+
+      $("#s_btn3").click(function () {
+        $(".share-slider").slick("slickGoTo", 2);
+        setActiveButton("s_btn3");
+      });
+    });
+  </script>
+
+  <!-- END Share Slider-->
+  <!---->
 </html>

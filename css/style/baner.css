@@ -43,6 +43,9 @@ body {
   border-radius: 6px;
   background-color: #ffffff;
 }
+#baner .slider-btn button.active {
+  background-color: #ffffff;
+}
 
 .content {
   background-color: rgba(0, 255, 255, 0);
