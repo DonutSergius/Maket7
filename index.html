@@ -3,53 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="css/style/baner.css" />
-    <link rel="stylesheet" href="css/null.css" />
-
+    <!--Slick Slider-->
     <link
       rel="stylesheet"
-      href="css/bootstrapV4/node_modules/bootstrap/dist/css/bootstrap.min.css"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!--Bootstrap v4-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!--Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
       rel="stylesheet"
     />
+    <!--Style-->
+    <link rel="stylesheet" href="css/style/baner.css" />
+    <link rel="stylesheet" href="css/style/why_ama.css" />
+    <link rel="stylesheet" href="css/null.css" />
     <title>Ama</title>
   </head>
   <body>
     <header></header>
+    <!---->
+    <!--BANER-->
     <section id="baner">
-      <div class="baner-slider">
-        <img class="baner_img" src="img/Phone1.png" alt="iPhone1" />
-        <img class="baner_img" src="img/Phone1.png" alt="iPhone1" />
-        <img class="baner_img" src="img/Phone1.png" alt="iPhone1" />
-      </div>
       <div class="baner-block">
-        <div class="title-baner">
-          <h1>Capture and Share</h1>
-          <div class="download-btn">
-            <div class="appStore">
-              <p>
-                <img src="img/icon_AppStore.png" alt="icon_AppStore" />App Store
-              </p>
-            </div>
-            <div class="playStore">
-              <p>
-                <img src="img/icon_PlayStore.png" alt="icon_PlayStore" />Play
-                Store
-              </p>
-            </div>
+        <div class="baner-slider">
+          <div class="back-img">
+            <img src="img/Phone1.png" alt="phone1" />
+          </div>
+          <div class="back-img">
+            <img src="img/Phone1.png" alt="phone1" />
+          </div>
+          <div class="back-img">
+            <img src="img/Phone1.png" alt="phone1" />
           </div>
         </div>
-        <div class="baner-button"></div>
+        <div class="slider-btn">
+          <button id="btn1"></button>
+          <button id="btn2"></button>
+          <button id="btn3"></button>
+        </div>
       </div>
     </section>
-    <div class="test"></div>
-  </body>
 
-  <script src="js/sliders.js"></script>
+    <div class="content">
+      <h1>Capture and Share</h1>
+      <div class="btn-download">
+        <div class="right">
+          <a href="#">
+            <p><img src="img/icon_AppStore.png" alt="" />App Store</p>
+          </a>
+        </div>
+        <div class="left">
+          <a href="#">
+            <p><img src="img/icon_PlayStore.png" alt="" />Play Store</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--END BANER-->
+    <!---->
+    <!--WHY AMA-->
+    <section id="why_ama">
+      <div class="container">
+        <h1>Why ama?</h1>
+        <div class="why_ama-block">
+          <div class="why_ama-elem">
+            <img src="img/Focus.png" alt="focus" />
+            <p>Auto focus</p>
+            <p>
+              ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper
+              facilisis vulputate. Sed auctor
+            </p>
+          </div>
+          <div class="why_ama-elem">
+            <img src="img/TouchID.png" alt="touchid" />
+            <p>Secured with Touch ID</p>
+            <p>
+              ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper
+              facilisis vulputate. Sed auctor
+            </p>
+          </div>
+          <div class="why_ama-elem">
+            <img src="img/Filters.png" alt="filters" />
+            <p>Your Filters</p>
+            <p>
+              ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper
+              facilisis vulputate. Sed auctor
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".baner-slider").slick({
+        dots: false,
+        arrows: false,
+        speed: 900,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: false,
+      });
+      $("#btn1").click(function () {
+        $(".baner-slider").slick("slickGoTo", 0);
+      });
+
+      $("#btn2").click(function () {
+        $(".baner-slider").slick("slickGoTo", 1);
+      });
+
+      $("#btn3").click(function () {
+        $(".baner-slider").slick("slickGoTo", 2);
+      });
+    });
+  </script>
 </html>
