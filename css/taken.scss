@@ -62,63 +62,13 @@
                 .dis-rigth{
                     display: flex;
                     margin-left: auto;
-
-                    div {
-                        height: 11px;
-                        width: 11px;
-                        position: relative;
+                    svg{
                         margin-left: auto;
                         margin-right: 10px;
                         align-self: center;
-                        border-bottom: 2px solid #f06464;
-                        border-right: 2px solid #f06464;
-                        transform: rotate(45deg);
-                        cursor: pointer;
-                      
-                        &:hover {
-                            background-color: #f06464;
-                        }
-
-                        &:hover:before,
-                        &:hover:after {
-                            background-color: #f06464;
-                        }
-                      }
-                      div:before,
-                      div:after {
-                        content: "";
-                        position: absolute;
-                        height: 15px;
-                        width: 15px;
-                        border-radius: 50%;pointer-events: none;
-                        border: 2px solid transparent;
-                        transform: rotate(-45deg);
-                        z-index: -2;
-                      }
-                      div:before {
                         &:hover{
-                            background-color: #f06464;
+                            fill: #f06464
                         }
-                        top: -4px;
-                        left: calc(-50% - 5px);
-                        border-top-color: #f06464;
-                        border-left-color: #f06464;
-                      }
-                      div:after {
-                        &:hover{
-                            background-color: #f06464;
-                        }
-                        top: calc(-50% - 5px);
-                        left: -4px;
-                        border-top-color: #f06464;
-                        border-right-color: #f06464;
-                      }
-
-                    img{
-                        margin-left: auto;
-                        align-self: center;
-                        width: 30px;
-                        height: 30px;
                     }
                     p{
                         order: 2;
