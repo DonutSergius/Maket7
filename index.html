@@ -126,7 +126,10 @@
               gravida.
             </p>
           </div>
+
+          <!--Slider elements-->
           <div class="share-slider">
+            <!--First element-->
             <div class="share-dis">
               <img src="img/icons/video.png" alt="video" />
               <p>
@@ -135,6 +138,9 @@
                 ornare. Donec gravida
               </p>
             </div>
+            <!--END First element-->
+            <!---->
+            <!--Second elements-->
             <div class="share-dis">
               <img src="img/icons/video.png" alt="video" />
               <p>
@@ -143,6 +149,9 @@
                 ornare. Donec gravida
               </p>
             </div>
+            <!--END Second element-->
+            <!---->
+            <!--Third elements-->
             <div class="share-dis">
               <img src="img/icons/video.png" alt="video" />
               <p>
@@ -151,6 +160,8 @@
                 ornare. Donec gravida
               </p>
             </div>
+            <!--END Third element-->
+            <!---->
           </div>
           <div class="share-slider-btn">
             <button id="s_btn1"></button>
@@ -173,7 +184,9 @@
             gravida.
           </p>
           <div class="features-container">
+            <!--Slider elements-->
             <div class="features-dis">
+              <!--First element-->
               <div class="features-elem">
                 <img src="img/icons/brush.png" alt="brush" />
                 <div class="discription">
@@ -185,8 +198,95 @@
                   </p>
                 </div>
               </div>
+              <!--END First element-->
+              <!---->
+              <!--Second element-->
+              <div class="features-elem">
+                <img src="img/icons/brush.png" alt="brush" />
+                <div class="discription">
+                  <h3>Color your photos</h3>
+                  <p>
+                    ultrices nisl sit amet luctus. Donec volutpat arcu
+                    ullamcorper facilisis vulputate. Sed auctor pulvinar ornare.
+                    Donec gravida.
+                  </p>
+                </div>
+              </div>
+              <!--END Second element-->
+              <!---->
+              <!--Third element-->
+              <div class="features-elem">
+                <img src="img/icons/brush.png" alt="brush" />
+                <div class="discription">
+                  <h3>Color your photos</h3>
+                  <p>
+                    ultrices nisl sit amet luctus. Donec volutpat arcu
+                    ullamcorper facilisis vulputate. Sed auctor pulvinar ornare.
+                    Donec gravida.
+                  </p>
+                </div>
+              </div>
+              <!--END Third element-->
+              <!---->
+              <!--Fourth element-->
+              <div class="features-elem">
+                <img src="img/icons/brush.png" alt="brush" />
+                <div class="discription">
+                  <h3>Color your photos</h3>
+                  <p>
+                    ultrices nisl sit amet luctus. Donec volutpat arcu
+                    ullamcorper facilisis vulputate. Sed auctor pulvinar ornare.
+                    Donec gravida.
+                  </p>
+                </div>
+              </div>
+              <!--END Fourth element-->
+              <!---->
+              <!--Fiveth element-->
+              <div class="features-elem">
+                <img src="img/icons/brush.png" alt="brush" />
+                <div class="discription">
+                  <h3>Color your photos</h3>
+                  <p>
+                    ultrices nisl sit amet luctus. Donec volutpat arcu
+                    ullamcorper facilisis vulputate. Sed auctor pulvinar ornare.
+                    Donec gravida.
+                  </p>
+                </div>
+              </div>
+              <!--END Fiveth element-->
+              <!---->
+              <!--Sixth element-->
+              <div class="features-elem">
+                <img src="img/icons/brush.png" alt="brush" />
+                <div class="discription">
+                  <h3>Color your photos</h3>
+                  <p>
+                    ultrices nisl sit amet luctus. Donec volutpat arcu
+                    ullamcorper facilisis vulputate. Sed auctor pulvinar ornare.
+                    Donec gravida.
+                  </p>
+                </div>
+              </div>
+              <!--END Sixth element-->
+              <!---->
+              <!--Seventh element-->
+              <div class="features-elem">
+                <img src="img/icons/brush.png" alt="brush" />
+                <div class="discription">
+                  <h3>Color your photos</h3>
+                  <p>
+                    ultrices nisl sit amet luctus. Donec volutpat arcu
+                    ullamcorper facilisis vulputate. Sed auctor pulvinar ornare.
+                    Donec gravida.
+                  </p>
+                </div>
+              </div>
+              <!--END Seventh element-->
+              <!---->
             </div>
             <div class="features-slider-btn">
+              <!--Slider buttons-->
               <div class="features-btn">
                 <button id="f_btn1"></button>
                 <button id="f_btn2"></button>
@@ -196,6 +296,7 @@
                 <button id="f_btn6"></button>
                 <button id="f_btn7"></button>
               </div>
+              <!--END Slider buttons-->
             </div>
           </div>
         </div>
@@ -214,7 +315,9 @@
   <!--Baner slider-->
   <script>
     $(document).ready(function () {
-      $(".baner-slider").slick({
+      var $banerSlider = $(".baner-slider");
+
+      $banerSlider.slick({
         dots: false,
         arrows: false,
         autoplay: true,
@@ -225,7 +328,7 @@
         centerMode: false,
       });
 
-      $(".baner-slider").on(
+      $banerSlider.on(
         "beforeChange",
         function (event, slick, currentSlide, nextSlide) {
           var buttonId = "btn" + (nextSlide + 1);
@@ -233,25 +336,20 @@
         }
       );
 
+      $(".slider-btn button").click(function () {
+        var index = $(this).index();
+        $banerSlider.slick("slickGoTo", index);
+        setActiveButton("btn" + (index + 1));
+      });
+
+      var initialSlide = $banerSlider.slick("slickCurrentSlide");
+      var initialButtonId = "btn" + (initialSlide + 1);
+      setActiveButton(initialButtonId);
+
       function setActiveButton(buttonId) {
         $(".slider-btn button").removeClass("active");
         $("#" + buttonId).addClass("active");
       }
-
-      $("#btn1").click(function () {
-        $(".baner-slider").slick("slickGoTo", 0);
-        setActiveButton("btn1");
-      });
-
-      $("#btn2").click(function () {
-        $(".baner-slider").slick("slickGoTo", 1);
-        setActiveButton("btn2");
-      });
-
-      $("#btn3").click(function () {
-        $(".baner-slider").slick("slickGoTo", 2);
-        setActiveButton("btn3");
-      });
     });
   </script>
   <!-- END BanerSlider-->
@@ -259,7 +357,9 @@
   <!--Share Slider-->
   <script>
     $(document).ready(function () {
-      $(".share-slider").slick({
+      var $shareSlider = $(".share-slider");
+
+      $shareSlider.slick({
         dots: false,
         arrows: false,
         autoplay: true,
@@ -270,7 +370,7 @@
         centerMode: false,
       });
 
-      $(".share-slider").on(
+      $shareSlider.on(
         "beforeChange",
         function (event, slick, currentSlide, nextSlide) {
           var buttonId = "s_btn" + (nextSlide + 1);
@@ -278,28 +378,64 @@
         }
       );
 
+      $(".share-slider-btn button").click(function () {
+        var index = $(this).index();
+        $shareSlider.slick("slickGoTo", index);
+        setActiveButton("s_btn" + (index + 1));
+      });
+
+      var initialSlide = $shareSlider.slick("slickCurrentSlide");
+      var initialButtonId = "s_btn" + (initialSlide + 1);
+      setActiveButton(initialButtonId);
+
       function setActiveButton(buttonId) {
         $(".share-slider-btn button").removeClass("active");
         $("#" + buttonId).addClass("active");
       }
-
-      $("#s_btn1").click(function () {
-        $(".share-slider").slick("slickGoTo", 0);
-        setActiveButton("s_btn1");
-      });
-
-      $("#s_btn2").click(function () {
-        $(".share-slider").slick("slickGoTo", 1);
-        setActiveButton("s_btn2");
-      });
-
-      $("#s_btn3").click(function () {
-        $(".share-slider").slick("slickGoTo", 2);
-        setActiveButton("s_btn3");
-      });
     });
   </script>
 
   <!-- END Share Slider-->
   <!---->
+  <!--Features slider-->
+  <script>
+    $(document).ready(function () {
+      var $featuresDis = $(".features-dis");
+
+      $featuresDis.slick({
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 10000,
+        speed: 900,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: false,
+      });
+
+      $featuresDis.on(
+        "beforeChange",
+        function (event, slick, currentSlide, nextSlide) {
+          var buttonId = "f_btn" + (nextSlide + 1);
+          setActiveButton(buttonId);
+        }
+      );
+
+      $(".features-btn button").click(function () {
+        var index = $(this).index();
+        $featuresDis.slick("slickGoTo", index);
+        setActiveButton("f_btn" + (index + 1));
+      });
+
+      var initialSlide = $featuresDis.slick("slickCurrentSlide");
+      var initialButtonId = "f_btn" + (initialSlide + 1);
+      setActiveButton(initialButtonId);
+
+      function setActiveButton(buttonId) {
+        $(".features-btn button").removeClass("active");
+        $("#" + buttonId).addClass("active");
+      }
+    });
+  </script>
+  <!--END Features slider-->
 </html>
