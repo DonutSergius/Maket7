@@ -54,31 +54,69 @@
     
 }
 
-@media(max-width: 1170px){
-    #why_ama{
+@media (max-width: 1170px) {
+    #why_ama {
         height: max-content;
         margin-top: -10px;
-        .container{
+        .container {
             padding: 50px 0px;
-            width:800px;
-            h1{
+            width: 800px;
+
+            h1 {
                 font-size: 38px;
             }
         }
     }
 }
 
-@media(max-width: 580px){
+
+@media (max-width: 1000px) {
     #why_ama{
         .container{
-            width:300px !important;
-            .why_ama-block{
-                .why_ama-elem{
+            width: 800px;
+            .why_ama-block {
+                .why_ama-elem {
+                    width: 100%;
                     img{
+                        width: 229px;
+                        height: 229px;
+                        margin: 30px;
+                    }
+                    p{
+                        width: 280px;
+                        margin: 0 auto;
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: #666666;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+                    &:nth-child(3) {
+                        width: 100%;
+                        margin-right: 0; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 580px) {
+    #why_ama {
+        .container {
+            width: 300px !important;
+
+            .why_ama-block {
+                .why_ama-elem {
+                    img {
                         width: 150px;
                         height: auto;
                     }
-                    p{
+
+                    p {
                         width: 250px;
                         font-size: 16px;
                         line-height: 18px;
@@ -89,8 +127,14 @@
     }
 }
 
+@media(min-width:768px){
+    .col-md-4{
+        max-width: 50%;
+    }
+}
+
 @media (min-width: 1200px) {
-    .container{
+    .container {
         max-width: 1170px;
     }
 }
