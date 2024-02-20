@@ -102,6 +102,7 @@
             width: calc(430px);
             margin-left: auto;
             img{
+                filter: drop-shadow(2.5px 4.33px 31px rgba(0,0,0,0.68));
                 padding-top: 100px;
             }
         }
@@ -134,7 +135,7 @@
             .features-img{
                 margin: 0px auto;
                 width: 350px;
-                img{
+                img{                   
                     padding-top: 30px;
                     width: 350px;
                     height: auto;
