@@ -177,12 +177,5 @@
     line-height: 18px;
   }
 }
-.test {
-  background-color: black;
-  position: relative;
-  z-index: 200;
-  height: 300px;
-  width: 100%;
-}
 
 /*# sourceMappingURL=share.css.map */
