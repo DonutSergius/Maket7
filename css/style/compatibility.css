@@ -4,6 +4,9 @@
   display: flex;
   align-items: center;
 }
+#compatibility .container-fluid {
+  padding: 0px 30px;
+}
 #compatibility .container-fluid h3 {
   font-size: 24px;
   color: #666666;

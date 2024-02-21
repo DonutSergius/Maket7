@@ -21,7 +21,7 @@
 #share .share-block .share-text {
   margin: auto 0px;
   align-items: center;
-  margin-right: 100px;
+  padding-left: 30px;
 }
 #share .share-block .share-text .share-title {
   padding-bottom: 20px;
