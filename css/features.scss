@@ -148,6 +148,7 @@
 @media(max-width: 600px){
     #features{
         height: 950px;
+        overflow-y: hidden;
         .features-block{
             width: 300px;
             display: block;
@@ -197,6 +198,7 @@
             }
             .features-img{
                 margin: 0px auto;
+                width: 300px;
                 img{
                     width: 300px;
                     height: auto;

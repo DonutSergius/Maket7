@@ -20,15 +20,11 @@
             font-weight: 400;
             margin-bottom: 20px;
         }
-        .mt-5{
-            min-width: 1170px;
-        }
     }
 
     .why_ama-block {
         background-color: #ffffff;
         margin: 0 auto;
-        width: 100%;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -36,12 +32,16 @@
         .why_ama-elem {
             flex-grow: 1; 
             img{
-                width: 229px;
-                height: 229px;
-                margin: 30px;
+                width: 100%;
+                max-width: 229px;
+                height: auto;
+                max-height: 229px;
+                margin-top: 30px;
+                margin-bottom: 30px;
             }
             p {
-                width: 280px;
+                width: 100%;
+                max-width: 280px;
                 margin: 0 auto;
                 font-size: 18px;
                 line-height: 24px;
@@ -49,6 +49,8 @@
                 font-weight: 400;
                 text-align: center;
             }
+
+            
         }
     }
     
@@ -71,37 +73,23 @@
 
 
 @media (max-width: 1000px) {
-    #why_ama{
-        .container{
-            width: 800px;
+    #why_ama {
+        .container {
+            width: 600px !important;
+
             .why_ama-block {
                 .why_ama-elem {
-                    width: 100%;
-                    img{
-                        width: 229px;
-                        height: 229px;
-                        margin: 30px;
-                    }
-                    p{
-                        width: 280px;
-                        margin: 0 auto;
-                        font-size: 18px;
-                        line-height: 24px;
-                        color: #666666;
-                        font-weight: 400;
-                        text-align: center;
-                    }
-                    &:nth-child(3) {
-                        width: 100%;
-                        margin-right: 0; 
+
+                    p {
+                        width: 250px;
+                        font-size: 16px;
+                        line-height: 18px;
                     }
                 }
             }
         }
     }
 }
-
-
 
 
 @media (max-width: 580px) {
@@ -127,14 +115,22 @@
     }
 }
 
+@media(min-width: 1000px){
+    .col-md-3{
+        flex: 0px 0px 0px;
+    }
+}
+
+
 @media(min-width:768px){
-    .col-md-4{
+    .col-md-3{
         max-width: 50%;
+        flex: 0 0 0;
     }
 }
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1170px;
+        max-width:1170px;
     }
 }

@@ -1,6 +1,6 @@
 #taken{
     position: relative;
-    height: 822px;
+    height: 821px;
     background-color: #ffffff;
     width: 100%;
     z-index: 300;
@@ -29,29 +29,42 @@
         height: 519px;
         width: 100%;
         display: flex;
+
         
         .img-block{
-            width: 25%;
+            width: 500px;
             height: 519px;
             transition: transform 0.3s ease-in-out;
-            div{
+            .img-content{
+                
                 width: 100%;
                 height: 100%;
                 overflow-y: visible;
+                background-position: center;
+                background-repeat: no-repeat;                
+            }
+            div{
+                
+                width: 100%;
+                height: 100%;
+                overflow-y: visible;
+                background-position: center;
+                background-repeat: no-repeat;
             }
 
-            &:hover{
+            &:hover,
+            &.click {
                 transform: translateY(-87px);
-
             }
+        
             .img-dis{
                 display: flex;
                 width:100%;
                 height: 87px;
                 background-color: #151515;
+                padding-top: 30px;
                 .dis-left{
                     p{
-                        margin-top: 30px;
                         margin-left: 20px;
                         font-size: 18px;
                         line-height: 27px;
@@ -60,20 +73,21 @@
                     }
                 }
                 .dis-rigth{
+                    width: 100px;
                     display: flex;
                     margin-left: auto;
                     svg{
+                        width: 30px; 
+                        height: 30px;
                         margin-left: auto;
-                        margin-right: 10px;
-                        align-self: center;
-                        &:hover{
+                        margin-right: 5px;
+                        &:hover,
+                        &.click{
                             fill: #f06464
                         }
                     }
                     p{
-                        order: 2;
                         text-align: right;
-                        margin-top: 30px;
                         margin-right: 20px;
                         font-size: 24px;
                         line-height: 27px;
@@ -86,11 +100,182 @@
     }
 }
 
+@media(max-width: 1600px){
+    #taken{
+        height: 702px;
+        .image-block{
+            height: 400px;
+            .img-block{
+                height: 400px;
+
+                &:hover,
+                &.click {
+                transform: translateY(-60px);
+            }
+                .img-dis{
+                    padding-top: 15px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1300px){
+    #taken{
+        .image-block{
+            .img-block{
+                &:hover,
+                &.click {
+                transform: translateY(-60px);
+            }
+                .img-dis{
+                    padding-top: 20px;
+                    height: 60px;
+                    .dis-left{
+                        p{
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
+                    }
+                    .dis-rigth{
+                        svg{
+                            width: 26px; 
+                            height: 26px;
+                            margin-left: auto;
+                            margin-right: 5px;
+                        }
+                        p{
+                            text-align: right;
+                            margin-right: 20px;
+                            font-size: 20px;
+                            line-height: 24px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1170px){
+    #taken{
+        height: 568px;
+        .taken-block{
+            margin-bottom: 0;
+            padding-bottom: 60px;
+        }
+        .image-block{
+            height: 300px;
+
+            .img-block{
+                height: 300px;
+
+                &:hover,
+                &.click {
+                    transform: translateY(-50px);
+                }
+                .img-dis{
+                    padding-top: 15px;
+                    height: 50px;
+                    .dis-left{
+                        p{
+                            margin-left: 10px;
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
+                    }
+                    .dis-rigth{
+                        svg{
+                            width: 26px; 
+                            height: 26px;
+                            margin-left: auto;
+                            margin-right: 5px;
+                        }
+                        p{
+                            text-align: right;
+                            margin-right: 10px;
+                            font-size: 20px;
+                            line-height: 24px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1070px){
+    #taken{
+        height: 543px;
+        .taken-block{
+            width: 600px;
+            margin: 0;
+            margin-right: auto;
+            h1{font-size: 40px;}
+            p{
+                line-height: 22px;
+            }
+        }
+        .image-block{
+            #taken_photo_2{
+                display: none;
+            }
+        }
+    }
+}
+
+@media(max-width: 800px){
+    #taken{
+        height: 502px;
+        .taken-block{
+            width: 100%;
+            padding: 40px 30px ;
+            padding-bottom: 60px;
+            h1{font-size: 36px;}
+            p{
+                line-height: 20px;
+            }
+        }
+        .image-block{
+            #taken_photo_1{
+                display: none;
+            }
+        }
+    }
+}
+
+@media(max-width: 550px){
+    #taken{
+        height: auto;
+        .taken-block{
+            width: 100%;
+            padding: 40px 30px ;
+            padding-bottom: 60px;
+            h1{font-size: 30px;}
+            p{
+                font-size: 16px;
+                line-height: 20px;
+                width: 100%;
+            }
+        }
+        .image-block{
+            .img-block{
+                width: 100%;
+            }
+            #taken_photo_4{
+                display: none;
+            }
+        }
+    }
+}
 
 .test{
     position: relative;
     z-index: 400;
     background-color: #db3939;
-    height: 200px;
+    height: 400px;
     width: 100%;
 }

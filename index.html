@@ -83,11 +83,11 @@
     <!--END BANER-->
     <!---->
     <!--WHY AMA-->
-    <section id="why_ama" class="container-fluid">
+    <section id="why_ama">
       <div class="container">
         <h1 class="display-2">Why ama?</h1>
         <div class="why_ama-block">
-          <div class="why_ama-elem col-md-4">
+          <div class="why_ama-elem col-md-3">
             <img src="img/icons/Focus.png" alt="focus" class="img-fluid" />
             <p class="lead">Auto focus</p>
             <p class="lead">
@@ -95,7 +95,7 @@
               facilisis vulputate. Sed auctor
             </p>
           </div>
-          <div class="why_ama-elem col-md-4">
+          <div class="why_ama-elem col-md-3">
             <img src="img/icons/TouchID.png" alt="touchid" class="img-fluid" />
             <p class="lead">Secured with Touch ID</p>
             <p class="lead">
@@ -103,7 +103,7 @@
               facilisis vulputate. Sed auctor
             </p>
           </div>
-          <div class="why_ama-elem col-md-4">
+          <div class="why_ama-elem col-md-3">
             <img src="img/icons/Filters.png" alt="filters" class="img-fluid" />
             <p class="lead">Your Filters</p>
             <p class="lead">
@@ -324,8 +324,11 @@
         </p>
       </div>
       <div class="image-block">
-        <div class="img-block">
-          <div style="background-image: url(img/photo/photo1.png)"></div>
+        <div class="img-block" id="taken_photo_1">
+          <div
+            class="img-content"
+            style="background-image: url(img/photo/photo1.png)"
+          ></div>
           <div class="img-dis">
             <div class="dis-left"><p>Mauris euismod ultrices</p></div>
             <div class="dis-rigth">
@@ -336,7 +339,6 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                style="width: 2rem; height: 2rem"
               >
                 <path
                   d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C16.09 3.81 17.76 3 19.5 3 22.58 3 25 5.42 25 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
@@ -346,8 +348,11 @@
             </div>
           </div>
         </div>
-        <div class="img-block">
-          <div style="background-image: url(img/photo/photo2.png)"></div>
+        <div class="img-block" id="taken_photo_2">
+          <div
+            class="img-content"
+            style="background-image: url(img/photo/photo2.png)"
+          ></div>
           <div class="img-dis">
             <div class="dis-left"><p>Mauris euismod ultrices</p></div>
             <div class="dis-rigth">
@@ -358,7 +363,6 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                style="width: 2rem; height: 2rem"
               >
                 <path
                   d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C16.09 3.81 17.76 3 19.5 3 22.58 3 25 5.42 25 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
@@ -368,8 +372,11 @@
             </div>
           </div>
         </div>
-        <div class="img-block">
-          <div style="background-image: url(img/photo/photo3.png)"></div>
+        <div class="img-block" id="taken_photo_3">
+          <div
+            class="img-content"
+            style="background-image: url(img/photo/photo3.png)"
+          ></div>
           <div class="img-dis">
             <div class="dis-left"><p>Mauris euismod ultrices</p></div>
             <div class="dis-rigth">
@@ -380,7 +387,6 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                style="width: 2rem; height: 2rem"
               >
                 <path
                   d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C16.09 3.81 17.76 3 19.5 3 22.58 3 25 5.42 25 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
@@ -390,8 +396,11 @@
             </div>
           </div>
         </div>
-        <div class="img-block">
-          <div style="background-image: url(img/photo/photo4.png)"></div>
+        <div class="img-block" id="taken_photo_4">
+          <div
+            class="img-content"
+            style="background-image: url(img/photo/photo4.png)"
+          ></div>
           <div class="img-dis">
             <div class="dis-left"><p>Mauris euismod ultrices</p></div>
             <div class="dis-rigth">
@@ -402,7 +411,6 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                style="width: 2rem; height: 2rem"
               >
                 <path
                   d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C16.09 3.81 17.76 3 19.5 3 22.58 3 25 5.42 25 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
@@ -424,129 +432,16 @@
     src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
   ></script>
   <!--Baner slider-->
-  <script>
-    $(document).ready(function () {
-      var $banerSlider = $(".baner-slider");
-
-      $banerSlider.slick({
-        dots: false,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 100000,
-        speed: 900,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: false,
-      });
-
-      $banerSlider.on(
-        "beforeChange",
-        function (event, slick, currentSlide, nextSlide) {
-          var buttonId = "btn" + (nextSlide + 1);
-          setActiveButton(buttonId);
-        }
-      );
-
-      $(".slider-btn button").click(function () {
-        var index = $(this).index();
-        $banerSlider.slick("slickGoTo", index);
-        setActiveButton("btn" + (index + 1));
-      });
-
-      var initialSlide = $banerSlider.slick("slickCurrentSlide");
-      var initialButtonId = "btn" + (initialSlide + 1);
-      setActiveButton(initialButtonId);
-
-      function setActiveButton(buttonId) {
-        $(".slider-btn button").removeClass("active");
-        $("#" + buttonId).addClass("active");
-      }
-    });
-  </script>
+  <script src="js/baner_slider.js"></script>
   <!-- END BanerSlider-->
   <!---->
   <!--Share Slider-->
-  <script>
-    $(document).ready(function () {
-      var $shareSlider = $(".share-slider");
-
-      $shareSlider.slick({
-        dots: false,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 100000,
-        speed: 900,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: false,
-      });
-
-      $shareSlider.on(
-        "beforeChange",
-        function (event, slick, currentSlide, nextSlide) {
-          var buttonId = "s_btn" + (nextSlide + 1);
-          setActiveButton(buttonId);
-        }
-      );
-
-      $(".share-slider-btn button").click(function () {
-        var index = $(this).index();
-        $shareSlider.slick("slickGoTo", index);
-        setActiveButton("s_btn" + (index + 1));
-      });
-
-      var initialSlide = $shareSlider.slick("slickCurrentSlide");
-      var initialButtonId = "s_btn" + (initialSlide + 1);
-      setActiveButton(initialButtonId);
-
-      function setActiveButton(buttonId) {
-        $(".share-slider-btn button").removeClass("active");
-        $("#" + buttonId).addClass("active");
-      }
-    });
-  </script>
-
+  <script src="js/share_slider.js"></script>
   <!-- END Share Slider-->
   <!---->
   <!--Features slider-->
-  <script>
-    $(document).ready(function () {
-      var $featuresDis = $(".features-dis");
-
-      $featuresDis.slick({
-        dots: false,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 10000,
-        speed: 900,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: false,
-      });
-
-      $featuresDis.on(
-        "beforeChange",
-        function (event, slick, currentSlide, nextSlide) {
-          var buttonId = "f_btn" + (nextSlide + 1);
-          setActiveButton(buttonId);
-        }
-      );
-
-      $(".features-btn button").click(function () {
-        var index = $(this).index();
-        $featuresDis.slick("slickGoTo", index);
-        setActiveButton("f_btn" + (index + 1));
-      });
-
-      var initialSlide = $featuresDis.slick("slickCurrentSlide");
-      var initialButtonId = "f_btn" + (initialSlide + 1);
-      setActiveButton(initialButtonId);
-
-      function setActiveButton(buttonId) {
-        $(".features-btn button").removeClass("active");
-        $("#" + buttonId).addClass("active");
-      }
-    });
-  </script>
+  <script src="js/features_slider.js"></script>
   <!--END Features slider-->
+  <script src="js/taken_with_ama.js"></script>
+  <script></script>
 </html>
