@@ -64,4 +64,98 @@
   border-color: #063550;
 }
 
+@media (max-width: 1100px) {
+  #download {
+    height: 550px;
+  }
+  #download .container-fluid {
+    max-width: 800px;
+  }
+  #download .container-fluid .download-left {
+    height: 550px;
+  }
+  #download .container-fluid .download-rigth .col-md-6 {
+    display: block;
+    flex: 100%;
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 800px) {
+  #download {
+    height: 450px;
+  }
+  #download .container-fluid {
+    max-width: 500px;
+    height: 450px;
+  }
+  #download .container-fluid .download-left {
+    height: 450px;
+  }
+  #download .container-fluid .download-left .shadow-div img {
+    width: 200px;
+    height: 200px;
+  }
+  #download .container-fluid .download-left .shadow-div::before {
+    content: "";
+    position: absolute;
+    transform: rotate(-51deg);
+    top: 26%;
+    left: 25%;
+    border-radius: 10px;
+    width: 230px;
+    height: 200px;
+    background-image: linear-gradient(rgb(191, 80, 80) 0%, rgba(209, 209, 209, 0) 100%);
+    z-index: -1; /* Розміщення під зображенням */
+  }
+  #download .container-fluid .download-rigth h1 {
+    font-size: 36px;
+  }
+  #download .container-fluid .download-rigth P {
+    font-size: 20px;
+  }
+  #download .container-fluid .download-rigth .col-md-6 {
+    flex: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  #download .container-fluid .download-rigth .row {
+    flex-wrap: wrap;
+  }
+  #download .container-fluid .row {
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 500px) {
+  #download {
+    height: 630px;
+    overflow: hidden;
+  }
+  #download .container-fluid {
+    max-width: 300px;
+  }
+  #download .container-fluid .download-left {
+    margin: 0 auto;
+    width: 300px;
+    padding: 30px 0px;
+    height: max-content;
+  }
+  #download .container-fluid .download-rigth {
+    margin: 0 auto;
+  }
+  #download .container-fluid .download-rigth h1 {
+    width: 100%;
+    font-size: 32px;
+  }
+  #download .container-fluid .download-rigth p {
+    font-size: 18px;
+  }
+  #download .container-fluid .download-rigth .btn-download p img {
+    margin-right: 20px;
+  }
+  #download .container-fluid .row {
+    flex-wrap: wrap;
+  }
+}
+
 /*# sourceMappingURL=download.css.map */
