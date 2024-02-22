@@ -40,14 +40,112 @@
     <link rel="stylesheet" href="css/style/download.css" />
     <link rel="stylesheet" href="css/style/compatibility.css" />
     <link rel="stylesheet" href="css/style/footer.css" />
+    <link rel="stylesheet" href="css/style/header.css" />
 
     <title>Ama</title>
   </head>
   <body>
-    <header></header>
+    <!---->
+    <!--Header-->
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2" style="padding: 0px"><p>ama</p></div>
+          <div class="menu-btn col-md-8 align-items-rigth" style="padding: 0px">
+            <button data-section="baner" onclick="scrollToSection('baner')">
+              Hallo
+            </button>
+            <button data-section="why_ama" onclick="scrollToSection('why_ama')">
+              Overview
+            </button>
+            <button data-section="share" onclick="scrollToSection('share')">
+              Share
+            </button>
+            <button
+              data-section="features"
+              onclick="scrollToSection('features')"
+            >
+              Features
+            </button>
+            <button data-section="taken" onclick="scrollToSection('taken')">
+              Gallery
+            </button>
+            <button
+              data-section="download"
+              onclick="scrollToSection('download')"
+            >
+              Download
+            </button>
+            <button
+              data-section="compatibility"
+              onclick="scrollToSection('compatibility')"
+            >
+              Compatibility
+            </button>
+          </div>
+        </div>
+
+        <div class="backcolor">
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+          </label>
+          <ul class="menu">
+            <li>
+              <button data-section="baner" onclick="scrollToSection('baner')">
+                Hallo
+              </button>
+            </li>
+            <li>
+              <button
+                data-section="why_ama"
+                onclick="scrollToSection('why_ama')"
+              >
+                Overview
+              </button>
+            </li>
+            <li>
+              <button data-section="share" onclick="scrollToSection('share')">
+                Share
+              </button>
+            </li>
+            <li>
+              <button
+                data-section="features"
+                onclick="scrollToSection('features')"
+              >
+                Features
+              </button>
+            </li>
+            <li>
+              <button data-section="taken" onclick="scrollToSection('taken')">
+                Gallery
+              </button>
+            </li>
+            <li>
+              <button
+                data-section="download"
+                onclick="scrollToSection('download')"
+              >
+                Download
+              </button>
+            </li>
+            <li>
+              <button
+                data-section="compatibility"
+                onclick="scrollToSection('compatibility')"
+              >
+                Compatibility
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!--END Header-->
     <!---->
     <!--BANER-->
-    <section id="baner">
+    <section id="baner" style="margin-top: 70px">
       <div class="baner-block">
         <div class="baner-slider">
           <div class="back-img">
@@ -532,6 +630,11 @@
     type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
   ></script>
+  <!---->
+  <!--header menu-->
+  <script src="js/header_menu.js"></script>
+  <!--END header menu-->
+  <!---->
   <!--Baner slider-->
   <script src="js/baner_slider.js"></script>
   <!-- END BanerSlider-->
