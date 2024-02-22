@@ -23,6 +23,7 @@
             align-items: center;
             padding-left: 30px;
             .share-title{
+                max-width: 470px;
                 h2{
                     font-size: 48px;
                     color: #ffffff;
@@ -39,7 +40,7 @@
             }
 
             .share-slider{
-                width: calc(1170px - 500px - 100px);
+                max-width: 470px;
                 display: flex;
                 flex-wrap: wrap;
                 .share-dis{
@@ -116,7 +117,7 @@
     
         .share-block {
             height: 1500px;
-            width: 600px;
+            width: 470px;
             flex-direction: column-reverse;
     
             .share-img {
@@ -133,16 +134,21 @@
                 padding-left: 0px;
                 .share-title {
                     padding-top: 60px;
-    
+                    p{
+                        font-size: 16px;
+                    }
                     h2 {
                         font-size: 40px;
                     }
                 }
     
                 .share-slider {
-                    width: 600px;
+                    width: 470px;
     
                     .share-dis {
+                        p{
+                            font-size: 14px;
+                        }
                         img {
                             align-self: center;
                             width: 150px;
@@ -151,15 +157,12 @@
                     }
                 }
             }
-    
-            .share-slider-btn {
-                text-align: center;
-            }
+
         }
     }
 }    
 
-@media(max-width: 650px){
+@media(max-width: 600px){
     #share{
         height: 900px;
         .share-block {
@@ -182,7 +185,7 @@
                         font-size: 30px;
                     }
                     p{
-                        font-size: 14px;
+                        font-size: 16px;
                         line-height: 20px; 
                     }
                 }
@@ -195,7 +198,7 @@
                             height: 50px;
                         }
                         p{
-                            font-size: 12px;
+                            font-size: 14px;
                             line-height: 18px; 
                         }
                     }

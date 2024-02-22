@@ -1,5 +1,5 @@
 header{
-    margin-top: -70px;
+    margin-top: -50px;
     position: fixed;
     z-index: 1000;
     width:100%;
@@ -13,6 +13,10 @@ header{
             justify-content: space-between;
             height: 100px;
             margin: 0px;
+            a{
+                text-decoration: none;
+                color:#ffffff;
+            }
             p{
                 margin-top: 20px;
                 font-size: 60px;
@@ -23,14 +27,18 @@ header{
             .menu-btn{
                 display: flex;
                 justify-content: space-between;
-                button{
+                button {
+                    flex:1; text-align: center;
                     height: 100%;
-                    background-color:#de5d5d ;
+                    background-color: #de5d5d;
                     font-size: 18px;
                     color: #ffffff;
                     font-weight: 400;
-                    &:hover{
-                        border-top: 6px solid #ffffff;
+                    padding-top: 10px; 
+                    box-sizing: border-box; /* Враховувати товщину границі у розрахунку висоти */
+                  
+                    &:hover {
+                      border-top: 6px solid #ffffff;
                     }
                 }
             }
@@ -90,7 +98,7 @@ header{
     button{
         color:#ffffff;
         background-color: #de5d5d;
-        margin: 0;
+        margin: 10px 0px;
         padding:10px 20px;
         border-radius: 70px;
         font-size: 16px;
@@ -112,8 +120,8 @@ header{
    display: block;
    background-color: #ffffff;
    position: absolute;
-   height: 5px;
-   width: 40px;
+   height: 3px;
+   width: 30px;
    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
    border-radius: 3px;
 }
@@ -131,7 +139,6 @@ header{
 //=========================
 @media(max-width: 800px){
     header{
-        background-color: #ffffff;
         height: 70px;
         .container-fluid{
             padding: 0px;
@@ -141,13 +148,16 @@ header{
         }
     }
     .menu-button-container, .backcolor {
+        label{
+            margin: 0px;
+        }
         display: flex;
       }
       .menu {
         display: flex;
         position: absolute;
         top: 0;
-        margin-top: 70px;
+        margin-top: 50px;
         left: 0;
         flex-direction: column;
         width: 100%;
@@ -163,7 +173,67 @@ header{
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
       }
       #menu-toggle:checked ~ .menu li {
-        height: 2.5em;
+        height: max-content;
+        padding: 0.3em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+
+
+      .menu > li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: #ffffff;
+        background-color: #de5d5d;
+      }
+}
+
+@media(max-width:500px){
+    header{
+        margin-top: -40px;
+        height: 40px;
+        .container-fluid{
+            padding: 0px;
+            .row{
+                display: none;
+            }
+        }
+    }
+
+    .backcolor{
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu-button-container, .backcolor {
+        label{
+            margin: 0px;
+        }
+        display: flex;
+      }
+      .menu {
+        display: flex;
+        position: absolute;
+        top: 0;
+        margin-top: 40px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      #menu-toggle ~ .menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      #menu-toggle:checked ~ .menu li {
+        height: max-content;
         padding: 0.3em;
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
       }

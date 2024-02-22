@@ -156,7 +156,7 @@
   }
   #features .features-block .features-text p {
     padding: 0px 10px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
     color: #aeaeae;
     font-weight: 400;
@@ -175,10 +175,11 @@
   }
   #features .features-block .features-text .features-container .features-dis .features-elem .discription p {
     padding: 0px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
   }
   #features .features-block .features-text .features-container .features-slider-btn {
+    padding: 0px 15px;
     height: 40px;
   }
   #features .features-block .features-img {

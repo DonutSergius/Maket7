@@ -50,10 +50,12 @@
     <header>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-2" style="padding: 0px"><p>ama</p></div>
+          <div class="col-md-2" style="padding: 0px">
+            <p><a href="">ama</a></p>
+          </div>
           <div class="menu-btn col-md-8 align-items-rigth" style="padding: 0px">
             <button data-section="baner" onclick="scrollToSection('baner')">
-              Hallo
+              Hello
             </button>
             <button data-section="why_ama" onclick="scrollToSection('why_ama')">
               Overview
@@ -93,7 +95,7 @@
           <ul class="menu">
             <li>
               <button data-section="baner" onclick="scrollToSection('baner')">
-                Hallo
+                Hello
               </button>
             </li>
             <li>
@@ -145,7 +147,7 @@
     <!--END Header-->
     <!---->
     <!--BANER-->
-    <section id="baner" style="margin-top: 70px">
+    <section id="baner">
       <div class="baner-block">
         <div class="baner-slider">
           <div class="back-img">
@@ -284,7 +286,7 @@
     <section id="features">
       <div class="features-block">
         <div class="features-text">
-          <h1>New features</h1>
+          <h1><b>New Features</b></h1>
           <p>
             Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu
             ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec
@@ -445,7 +447,7 @@
                   d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C16.09 3.81 17.76 3 19.5 3 22.58 3 25 5.42 25 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
                 />
               </svg>
-              <p>65</p>
+              <p id="like-count">65</p>
             </div>
           </div>
         </div>
@@ -469,7 +471,7 @@
                   d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C16.09 3.81 17.76 3 19.5 3 22.58 3 25 5.42 25 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
                 />
               </svg>
-              <p>65</p>
+              <p id="like-count">65</p>
             </div>
           </div>
         </div>
@@ -493,7 +495,7 @@
                   d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C16.09 3.81 17.76 3 19.5 3 22.58 3 25 5.42 25 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
                 />
               </svg>
-              <p>65</p>
+              <p id="like-count">65</p>
             </div>
           </div>
         </div>
@@ -517,7 +519,7 @@
                   d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C16.09 3.81 17.76 3 19.5 3 22.58 3 25 5.42 25 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
                 />
               </svg>
-              <p>65</p>
+              <p id="like-count">65</p>
             </div>
           </div>
         </div>
@@ -530,28 +532,26 @@
       <div class="container-fluid" style="width: 1030px; padding: 0px 30px">
         <div class="row">
           <!-- Лівий контейнер -->
-          <div
-            class="download-left col-md-6 d-flex align-items-center justify-content-center"
-          >
+          <div class="download-left col-md-5 d-flex align-items-center">
             <div class="shadow-div">
               <img src="img/icons/icon_ama.png" alt="icon_ama" />
             </div>
           </div>
 
           <!-- Правий контейнер -->
-          <div class="col-md-6 d-flex align-items-center">
+          <div class="col-md-7 d-flex align-items-center">
             <div class="download-rigth">
               <h1>Believe me, you don’t wanna miss this app.</h1>
               <p>- Newyork Times</p>
               <div class="btn-download row">
-                <div class="col-md-6">
+                <div class="col-md-6" style="padding-right: 0px">
                   <a href="#">
                     <p>
                       <img src="img/icons/icon_AppStore.png" alt="" />App Store
                     </p>
                   </a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" style="padding-left: 0px">
                   <a href="#">
                     <p>
                       <img src="img/icons/icon_PlayStore.png" alt="" />Play
@@ -570,11 +570,11 @@
     <!--Compatibility-->
     <section id="compatibility">
       <div class="container-fluid" style="max-width: 1030px">
-        <h3>Compatibility</h3>
+        <h3><b>Compatibility</b></h3>
         <hr />
         <div class="row">
-          <div class="iPhoneDevice col-md-6">
-            <p>ISO</p>
+          <div class="iPhoneDevice col-md-6" style="padding-right: 0px">
+            <p><b>ISO</b></p>
             <p>
               Requires iOS 6.0 or later. Compatible with iPhone, iPad, and iPod
               touch. This app is optimized for iPhone 5.
@@ -582,7 +582,7 @@
             <img src="img/iPhoneDevice.png" alt="iPhoneDevice" />
           </div>
           <div class="AndroidDevice col-md-6">
-            <p>Android</p>
+            <p><b>Android</b></p>
             <p>
               Compatible with Android KitKat 4.4 or later. Support for x86
               devices (i.e. Samsung Galaxy Tab 3 10.1).
@@ -616,8 +616,9 @@
                 id="email"
                 placeholder="Your email"
               />
-              <button>Submit</button>
+              <button id="submit-email">Submit</button>
             </div>
+            <div id="notification"></div>
           </div>
         </div>
       </div>
@@ -630,6 +631,48 @@
     type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
   ></script>
+
+  <!--Validation-->
+  <script>
+    var emailInput = document.getElementById("email");
+    document
+      .getElementById("submit-email")
+      .addEventListener("click", function () {
+        // Отримуємо значення поля вводу
+        var emailValue = emailInput.value.trim();
+
+        // Перевірка, чи поле вводу не порожнє та відповідає формату email
+        if (emailValue === "") {
+          showNotification("Please enter your email.");
+        } else if (!isValidEmail(emailValue)) {
+          showNotification("Please enter a valid email address.");
+        } else {
+          // Якщо все в порядку, відображаємо повідомлення про успішну відправку
+          showNotification("Form submitted successfully!", true);
+          // Тут ви можете додати код для відправки форми на сервер, якщо потрібно
+        }
+      });
+
+    // Функція для перевірки правильного формату email
+    function isValidEmail(email) {
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+
+    // Функція для відображення повідомлення
+    function showNotification(message, isSuccess) {
+      var notification = document.getElementById("notification");
+      notification.textContent = message;
+      notification.style.color = isSuccess ? "green" : "red";
+
+      // Очищаємо повідомлення через 3 секунди
+      setTimeout(function () {
+        notification.textContent = "";
+        emailInput.value = "";
+      }, 3000);
+    }
+  </script>
+
   <!---->
   <!--header menu-->
   <script src="js/header_menu.js"></script>

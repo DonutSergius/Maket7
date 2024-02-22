@@ -37,10 +37,10 @@
     .download-rigth{
         width: 100%;
         h1{
+            max-width: 360px;
             font-size: 48px;
             color: #ffffff;
             font-weight: 400;
-            max-width: 360px;
         }
         p{
             margin-top: 10px;
@@ -54,12 +54,17 @@
                 text-decoration: none;
             }
             p{
+                font-size: 28px;
+                width: max-content;
                 border-radius: 5px;
                 background-color: rgba(6,53,80,0);
                 border: 3px solid #ffffff;
-                padding: 5px 10px;
+                padding: 10px 20px;
                 text-align: center;
-
+                img{
+                   margin-left: 5px;
+                   margin-right: 20px;
+                }
                 &:hover{
                     background-color: #063550;
                     border-color: #063550;
@@ -79,12 +84,19 @@
             }
             .download-rigth{
                 
-                .col-md-6{
-                    display: block;
-                    flex: 100%;
-                    max-width: 60%;
-                    margin: 0 auto;
-                }
+                .btn-download{
+                    .col-md-6{
+                        padding-left: 0px;
+                    }
+                    p{
+                        margin-top: 20px;
+                        font-size: 22px;
+                        img{
+                            width: 40px;
+                            height: auto;
+                        }
+                    }
+                }                
             }
         }
     }
@@ -119,6 +131,7 @@
             }
             }
             .download-rigth{
+                margin-left: 20px;
                 h1{
                     font-size: 36px;
                 }
@@ -126,11 +139,11 @@
                     font-size: 20px;
                 }
                 .col-md-6{
-                    flex: 100%;
                     max-width: 100%;
-                    margin: 0 auto;
                 }
                 .row{
+                    margin: 0px;
+                    max-width: 400px;
                     flex-wrap: wrap;
                 }
             }
@@ -150,7 +163,7 @@
             .download-left{
                 margin: 0 auto;
                 width: 300px;
-                padding: 30px 0px;
+                padding: 30px 30px;
                 height: max-content;
             }
                 .download-rigth{
@@ -160,7 +173,11 @@
                         font-size: 32px;
                     }
                     p{
-                        font-size: 18px;
+                        width: 100%;
+                        font-size: 16px;
+                    }
+                    .col-md-6{
+                        padding: 0px;
                     }
                     .btn-download{
                         p{

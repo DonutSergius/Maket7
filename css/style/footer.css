@@ -100,8 +100,16 @@ footer .container-fluid .second-coloum .email-input button:hover {
     height: 150px;
     max-width: 300px;
   }
+  footer .container-fluid .first-coloum {
+    order: 2;
+  }
   footer .container-fluid .first-coloum p {
+    text-align: center;
+    width: 300px;
     font-size: 16px;
+  }
+  footer .container-fluid .second-coloum {
+    order: 1;
   }
   footer .container-fluid .second-coloum input {
     max-width: 100px;

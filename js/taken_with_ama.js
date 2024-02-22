@@ -31,15 +31,29 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       });
   });
-  document.addEventListener("DOMContentLoaded", function () {
-    let isClicked = false;
 
-    document
-      .querySelectorAll(".dis-rigth svg")
-      .forEach(function (svgElement) {
-        svgElement.addEventListener("click", function () {
-          svgElement.classList.toggle("click");
-          isClicked = !isClicked;
-        });
-      });
+  // Отримуємо елементи DOM для кожного блоку
+const imgBlocks = document.querySelectorAll('.img-block');
+
+// Ітеруємося по кожному блоку та додаємо обробник подій
+imgBlocks.forEach(imgBlock => {
+  const likeSvg = imgBlock.querySelector('.dis-rigth svg');
+  const likeCount = imgBlock.querySelector('#like-count');
+
+  let isLiked = false;
+  let likes = parseInt(likeCount.textContent);
+
+  likeSvg.addEventListener('click', function () {
+    if (!isLiked) {
+      likeSvg.style.fill = '#f06464';
+      likes++;
+      likeCount.textContent = likes;
+    } else {
+      likeSvg.style.fill = 'none';
+      likes--;
+      likeCount.textContent = likes;
+    }
+
+    isLiked = !isLiked;
   });
+});

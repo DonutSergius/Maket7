@@ -3,6 +3,7 @@ body {
 }
 
 #baner {
+  margin-top: 50px;
   height: 787px;
   background-color: #de5d5d;
   position: relative;
@@ -96,7 +97,7 @@ body {
   border-radius: 5px;
   background-color: rgba(6, 53, 80, 0);
   border: 3px solid #ffffff;
-  padding: 5px 10px;
+  padding: 10px 20px;
   text-align: center;
 }
 .content .btn-download .right p:hover,
@@ -217,6 +218,14 @@ body {
   }
   .content .btn-download .left {
     margin-left: 10px;
+  }
+}
+@media (max-width: 500px) {
+  #baner {
+    margin-top: 40px;
+  }
+  .content {
+    margin-top: 40px;
   }
 }
 @media (max-width: 410px) {

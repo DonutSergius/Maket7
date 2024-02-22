@@ -24,6 +24,7 @@
   padding-left: 30px;
 }
 #share .share-block .share-text .share-title {
+  max-width: 470px;
   padding-bottom: 20px;
 }
 #share .share-block .share-text .share-title h2 {
@@ -39,7 +40,7 @@
   font-weight: 400;
 }
 #share .share-block .share-text .share-slider {
-  width: 570px;
+  max-width: 470px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -107,7 +108,7 @@
   }
   #share .share-block {
     height: 1500px;
-    width: 600px;
+    width: 470px;
     flex-direction: column-reverse;
   }
   #share .share-block .share-img {
@@ -124,22 +125,25 @@
   #share .share-block .share-text .share-title {
     padding-top: 60px;
   }
+  #share .share-block .share-text .share-title p {
+    font-size: 16px;
+  }
   #share .share-block .share-text .share-title h2 {
     font-size: 40px;
   }
   #share .share-block .share-text .share-slider {
-    width: 600px;
+    width: 470px;
+  }
+  #share .share-block .share-text .share-slider .share-dis p {
+    font-size: 14px;
   }
   #share .share-block .share-text .share-slider .share-dis img {
     align-self: center;
     width: 150px;
     height: 70px;
   }
-  #share .share-block .share-slider-btn {
-    text-align: center;
-  }
 }
-@media (max-width: 650px) {
+@media (max-width: 600px) {
   #share {
     height: 900px;
   }
@@ -164,7 +168,7 @@
     font-size: 30px;
   }
   #share .share-block .share-text .share-title p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
   }
   #share .share-block .share-text .share-slider {
@@ -176,7 +180,7 @@
     height: 50px;
   }
   #share .share-block .share-text .share-slider .share-dis p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 18px;
   }
 }
