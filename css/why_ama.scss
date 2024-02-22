@@ -73,7 +73,7 @@
 @media (max-width: 1000px) {
     #why_ama {
         .container {
-            width: 600px !important;
+            width: 580px !important;
 
             .why_ama-block {
                 justify-content: center;
@@ -114,17 +114,9 @@
     }
 }
 
-@media(min-width: 1000px){
-    .col-md-3{
-        flex: 0px 0px 0px;
-    }
-}
-
-
 @media(min-width:768px){
     .col-md-3{
         max-width: 50%;
-        flex: 0 0 0;
     }
 }
 

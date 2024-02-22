@@ -1,0 +1,124 @@
+footer{
+    height: 225px;
+    background-color: #f4f4f4;
+    .container-fluid{
+        max-width: 1170px;
+        .row{
+            height: 225px;
+            margin: 0 auto;
+        }
+        .first-coloum{
+            p{
+                font-size: 18px;
+                color: #666666;
+                font-weight: 400;
+            }
+        }
+        .second-coloum{
+            p{
+                font-size: 16px;
+                line-height: 24px;
+                color: #666666;
+                font-weight: 400;
+            }
+            .email-input{
+                margin-top: 15px;
+                input{
+                    width: 311px;
+                    height: 48px;
+                    padding: 0 20px;
+                    border-radius: 5px;
+                    background-color: #f4f4f4;
+                    border: 1px solid #a3a3a3;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #666666;
+                    font-weight: 400;
+                }
+                button{
+                    margin-left: 20px;
+                    width: 101px;
+                    height: 48px;
+                    border-radius: 5px;
+                    background-color: #f06464;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #f4f4f4;
+                    font-weight: 400;
+                }
+                button:hover{           
+                    background-color: #ff5151;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1200px){
+    footer{
+        .container-fluid{
+            max-width: 900px;
+        }
+    }
+}
+@media(max-width:920px){
+    footer{
+        .container-fluid{
+           max-width: 600px;
+           .row{
+            max-width: 600px;
+           }
+           .first-coloum{
+            max-width: 300px;
+            p{
+                font-size: 16px;
+            }
+           }
+           .second-coloum{
+            max-width: 300px;
+            p{
+                font-size: 14px;
+                line-height: 20px;
+            }
+            .email-input{
+                input{
+                    max-width: 220px;
+                    padding: 0px 10px;
+                    height: 40px;
+                    font-size: 14px;
+                }
+                button{
+                    height: 40px;
+                    font-size: 14px;
+                }
+            }
+           }
+        }
+    }
+}
+
+@media(max-width:620px){
+    footer{
+        text-align: center;
+        .container-fluid{
+            max-width: 300px;
+            display: flex;
+            align-items: center;
+            .row{
+                margin: 0 auto;
+                height: 150px;
+                max-width: 300px;
+            }
+            .first-coloum{
+                p{
+                    font-size: 16px;
+                }
+            }
+            .second-coloum{
+                input{
+                    max-width: 100px
+                }
+            }
+        }
+    }
+}
