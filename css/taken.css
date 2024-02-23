@@ -275,17 +275,17 @@
 }
 @media (max-width: 500px) {
   #taken {
-    height: 1415px;
+    height: 1430px;
   }
 }
 @media (max-width: 440px) {
   #taken {
-    height: 1430px;
+    height: 1450px;
   }
 }
 @media (max-width: 350px) {
   #taken {
-    height: 1450px;
+    height: 1470px;
   }
 }
 
