@@ -155,9 +155,9 @@
 
 @media(max-width: 1170px){
     #taken{
-        height: 568px;
+        height: 588px;
         .taken-block{
-            margin-bottom: 0;
+            margin-bottom: 20px;
             padding-bottom: 60px;
         }
         .image-block{
@@ -199,10 +199,11 @@
 
 @media(max-width:1070px){
     #taken{
-        height: 550px;
+        height: 580px;
         .taken-block{
             width: 600px;
             margin: 0;
+            margin-bottom: 20px;
             margin-right: auto;
             h1{font-size: 48px;}
             p{

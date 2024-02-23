@@ -184,6 +184,7 @@ header .container-fluid .row .col-md-8 {
     height: max-content;
     padding: 0.3em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.199);
   }
   .menu > li {
     display: flex;

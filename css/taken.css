@@ -134,10 +134,10 @@
 }
 @media (max-width: 1170px) {
   #taken {
-    height: 568px;
+    height: 588px;
   }
   #taken .taken-block {
-    margin-bottom: 0;
+    margin-bottom: 20px;
     padding-bottom: 60px;
   }
   #taken .image-block {
@@ -172,11 +172,12 @@
 }
 @media (max-width: 1070px) {
   #taken {
-    height: 550px;
+    height: 580px;
   }
   #taken .taken-block {
     width: 600px;
     margin: 0;
+    margin-bottom: 20px;
     margin-right: auto;
   }
   #taken .taken-block h1 {
