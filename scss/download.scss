@@ -129,7 +129,7 @@
                     height: 200px;
     
                     background-image: linear-gradient( rgba(191,80,80,0.9999999999999999) 0%, rgba(209,209,209,0) 100%);
-                    z-index: -1; /* Розміщення під зображенням */
+                    z-index: -1; 
                 }
             }
             }
@@ -141,13 +141,17 @@
                 P{
                     font-size: 20px;
                 }
-                .col-md-6{
-                    max-width: 100%;
-                }
                 .row{
                     margin: 0px;
                     max-width: 400px;
                     flex-wrap: wrap;
+                    .col-md-6{
+                        max-width: 100%;
+                        padding-left: 10px;
+                        p{
+                           max-width: 100%;
+                        }
+                    }
                 }
             }
             .row{
@@ -179,10 +183,10 @@
                         width: 100%;
                         font-size: 16px;
                     }
-                    .col-md-6{
-                        padding: 0px;
-                    }
                     .btn-download{
+                        .col-md-6{
+                            padding: 0px !important;
+                        }
                         p{
                             img{
                                 margin-right: 20px;

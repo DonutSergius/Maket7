@@ -63,23 +63,25 @@
             width: 800px;
 
             h1 {
-                font-size: 38px;
+                font-size: 48px;
             }
         }
     }
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 950px) {
     #why_ama {
         .container {
             width: 580px !important;
-
+            h1{
+                font-size: 40px;
+            }
             .why_ama-block {
                 justify-content: center;
                 .why_ama-elem {
                     img {
-                        max-width: 200px;
+                        max-width: 150px;
                         height: auto;
                     }
 
@@ -96,15 +98,17 @@
 }
 
 
-@media (max-width: 580px) {
+@media (max-width: 600px) {
     #why_ama {
         .container {
             width: 300px !important;
-
+            h1{
+                font-size: 30px;
+            }
             .why_ama-block {
                 .why_ama-elem {
                     img {
-                        max-width: 150px;
+                        max-width: 100px;
                         height: auto;
                     }
 

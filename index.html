@@ -51,7 +51,9 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-2" style="padding: 0px">
-            <p><a href="">ama</a></p>
+            <p style="font-family: 'Montserrat'; font-weight: 600">
+              <a href="">ama</a>
+            </p>
           </div>
           <div
             class="menu-btn col-md-8 align-items-right"
@@ -460,6 +462,8 @@
         </p>
       </div>
       <div class="image-block">
+        <!---->
+        <!--First foto-->
         <div
           class="img-block"
           id="taken_photo_1"
@@ -488,6 +492,8 @@
             </div>
           </div>
         </div>
+        <!---->
+        <!--Second foto-->
         <div
           class="img-block"
           id="taken_photo_2"
@@ -516,6 +522,8 @@
             </div>
           </div>
         </div>
+        <!---->
+        <!--Third foto-->
         <div
           class="img-block"
           id="taken_photo_3"
@@ -544,6 +552,8 @@
             </div>
           </div>
         </div>
+        <!---->
+        <!--Fourth foto-->
         <div
           class="img-block"
           id="taken_photo_4"
@@ -572,6 +582,7 @@
             </div>
           </div>
         </div>
+        <!---->
       </div>
     </section>
     <!--END Taken with ama-->
@@ -628,10 +639,8 @@
         <div class="row">
           <div class="iPhoneDevice col-md-6">
             <p style="font-family: 'Montserrat'; font-weight: 600">iSO</p>
-            <p>
-              Requires iOS 6.0 or later. Compatible with iPhone, iPad, and iPod
-              touch. This app is optimized for iPhone 5.
-            </p>
+            <p>Requires iOS 6.0 or later. Compatible with iPhone, iPad,</p>
+            <p>and iPod touch. This app is optimized for iPhone 5.</p>
             <img src="img/iPhoneDevice.png" alt="iPhoneDevice" />
           </div>
           <div class="AndroidDevice col-md-6">
@@ -659,13 +668,14 @@
             class="second-coloum col-md-5 align-self-center"
             style="padding: 0px"
           >
-            <p>Subscribe our email newsletter.</p>
+            <p id="needpads">Subscribe our email newsletter.</p>
             <div class="email-input d-flex align-items-center">
               <input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="Your email"
+                style="position: relative; z-index: 99"
               />
               <button id="submit-email">Submit</button>
             </div>
@@ -691,16 +701,13 @@
       .addEventListener("click", function () {
         // Отримуємо значення поля вводу
         var emailValue = emailInput.value.trim();
-
         // Перевірка, чи поле вводу не порожнє та відповідає формату email
         if (emailValue === "") {
           showNotification("Please enter your email.");
         } else if (!isValidEmail(emailValue)) {
           showNotification("Please enter a valid email address.");
         } else {
-          // Якщо все в порядку, відображаємо повідомлення про успішну відправку
           showNotification("Form submitted successfully!", true);
-          // Тут ви можете додати код для відправки форми на сервер, якщо потрібно
         }
       });
 
@@ -709,11 +716,14 @@
       var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       return emailRegex.test(email);
     }
-
     // Функція для відображення повідомлення
     function showNotification(message, isSuccess) {
       var notification = document.getElementById("notification");
+      var needpad = document.getElementById("needpads");
       notification.textContent = message;
+      notification.style.lineHeight = 0;
+      notification.style.paddingTop = "20px";
+      needpad.style.paddingTop = "20px";
       notification.style.color = isSuccess ? "green" : "red";
 
       // Очищаємо повідомлення через 3 секунди

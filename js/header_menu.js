@@ -1,6 +1,6 @@
 // Зміна позиції користувача відповідно до натиснутої кнопки
 function getCurrentSection() {
-    const headerHeight = 150;
+    const headerHeight = 200;
     const sections = document.querySelectorAll("section");
     let currentSection = null;
   
@@ -55,7 +55,7 @@ function getCurrentSection() {
   document.addEventListener("scroll", changeMenuBackground);
   
   function scrollToSection(sectionId) {
-    const headerHeight = 50;
+    const headerHeight = 70;
     const section = document.getElementById(sectionId);
   
     if (section) {
