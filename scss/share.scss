@@ -27,8 +27,7 @@
                 h2{
                     font-size: 48px;
                     color: #ffffff;
-                    font-weight: 400;
-                    margin-bottom: 10px;
+                    margin-bottom: 15px;
                 }
                 p{
                     font-size: 18px;
@@ -54,6 +53,7 @@
                         padding-right: 30px;
                     }
                     p{
+                        width: 250px;
                         font-size: 16px;
                         line-height: 24px;
                         color: #aeaeae;
@@ -62,7 +62,7 @@
                 }
             }
             .share-slider-btn {
-                padding: 20px 0px;
+                padding: 0px 0px;
                 width: 100%;
                 button {
                     width: 12px;
@@ -147,6 +147,7 @@
     
                     .share-dis {
                         p{
+                            width: auto;
                             font-size: 14px;
                         }
                         img {

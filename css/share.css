@@ -30,8 +30,7 @@
 #share .share-block .share-text .share-title h2 {
   font-size: 48px;
   color: #ffffff;
-  font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 #share .share-block .share-text .share-title p {
   font-size: 18px;
@@ -56,13 +55,14 @@
   padding-right: 30px;
 }
 #share .share-block .share-text .share-slider .share-dis p {
+  width: 250px;
   font-size: 16px;
   line-height: 24px;
   color: #aeaeae;
   font-weight: 400;
 }
 #share .share-block .share-text .share-slider-btn {
-  padding: 20px 0px;
+  padding: 0px 0px;
   width: 100%;
 }
 #share .share-block .share-text .share-slider-btn button {
@@ -135,6 +135,7 @@
     width: 470px;
   }
   #share .share-block .share-text .share-slider .share-dis p {
+    width: auto;
     font-size: 14px;
   }
   #share .share-block .share-text .share-slider .share-dis img {

@@ -29,11 +29,9 @@ function getCurrentSection() {
         const sectionId = button.getAttribute("data-section");
         button.style.transition = transitionStyle;
         if (currentSection === sectionId) {
-            button.style.borderTop = "6px solid #ffffff";
-            button.style.color = "#ffffff";
+          button.classList.add("active"); 
         } else {
-            button.style.borderTop = "0px solid #ffffff";
-            button.style.color = "";
+          button.classList.remove("active");
         }
       });
     } 

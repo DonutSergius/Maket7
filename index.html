@@ -27,20 +27,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap"
       rel="stylesheet"
     />
     <!--Style-->
-    <link rel="stylesheet" href="css/style/baner.css" />
-    <link rel="stylesheet" href="css/style/why_ama.css" />
+    <link rel="stylesheet" href="css/baner.css" />
+    <link rel="stylesheet" href="css/why_ama.css" />
     <link rel="stylesheet" href="css/null.css" />
-    <link rel="stylesheet" href="css/style/share.css" />
-    <link rel="stylesheet" href="css/style/features.css" />
-    <link rel="stylesheet" href="css/style/taken.css" />
-    <link rel="stylesheet" href="css/style/download.css" />
-    <link rel="stylesheet" href="css/style/compatibility.css" />
-    <link rel="stylesheet" href="css/style/footer.css" />
-    <link rel="stylesheet" href="css/style/header.css" />
+    <link rel="stylesheet" href="css/share.css" />
+    <link rel="stylesheet" href="css/features.css" />
+    <link rel="stylesheet" href="css/taken.css" />
+    <link rel="stylesheet" href="css/download.css" />
+    <link rel="stylesheet" href="css/compatibility.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/header.css" />
 
     <title>Ama</title>
   </head>
@@ -53,28 +53,49 @@
           <div class="col-md-2" style="padding: 0px">
             <p><a href="">ama</a></p>
           </div>
-          <div class="menu-btn col-md-8 align-items-rigth" style="padding: 0px">
-            <button data-section="baner" onclick="scrollToSection('baner')">
+          <div
+            class="menu-btn col-md-8 align-items-right"
+            style="padding: 0px; flex-wrap: nowrap"
+          >
+            <button
+              data-section="baner"
+              onclick="scrollToSection('baner')"
+              style="margin-left: 0px; z-index: 700"
+            >
               Hello
             </button>
-            <button data-section="why_ama" onclick="scrollToSection('why_ama')">
+            <button
+              data-section="why_ama"
+              onclick="scrollToSection('why_ama')"
+              style="z-index: 600"
+            >
               Overview
             </button>
-            <button data-section="share" onclick="scrollToSection('share')">
+            <button
+              data-section="share"
+              onclick="scrollToSection('share')"
+              style="z-index: 500"
+            >
               Share
             </button>
             <button
               data-section="features"
               onclick="scrollToSection('features')"
+              style="z-index: 400"
             >
               Features
             </button>
-            <button data-section="taken" onclick="scrollToSection('taken')">
+            <button
+              data-section="taken"
+              onclick="scrollToSection('taken')"
+              style="z-index: 300"
+            >
               Gallery
             </button>
             <button
               data-section="download"
               onclick="scrollToSection('download')"
+              style="z-index: 200"
             >
               Download
             </button>
@@ -169,7 +190,9 @@
     </section>
 
     <div class="content">
-      <h1>Capture and Share</h1>
+      <h1 style="font-family: 'Montserrat'; font-weight: 600">
+        Capture and Share
+      </h1>
       <div class="btn-download">
         <div class="right">
           <a href="#">
@@ -188,11 +211,16 @@
     <!--WHY AMA-->
     <section id="why_ama">
       <div class="container">
-        <h1 class="display-2">Why ama?</h1>
-        <div class="why_ama-block">
+        <h1
+          class="display-2"
+          style="font-family: 'Montserrat'; font-weight: 600"
+        >
+          Why ama?
+        </h1>
+        <div class="why_ama-block justij">
           <div class="why_ama-elem col-md-3">
             <img src="img/icons/Focus.png" alt="focus" class="img-fluid" />
-            <p class="lead">Auto focus</p>
+            <p class="lead"><b>Auto focus</b></p>
             <p class="lead">
               ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper
               facilisis vulputate. Sed auctor
@@ -200,7 +228,7 @@
           </div>
           <div class="why_ama-elem col-md-3">
             <img src="img/icons/TouchID.png" alt="touchid" class="img-fluid" />
-            <p class="lead">Secured with Touch ID</p>
+            <p class="lead"><b>Secured with Touch ID</b></p>
             <p class="lead">
               ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper
               facilisis vulputate. Sed auctor
@@ -208,7 +236,7 @@
           </div>
           <div class="why_ama-elem col-md-3">
             <img src="img/icons/Filters.png" alt="filters" class="img-fluid" />
-            <p class="lead">Your Filters</p>
+            <p class="lead"><b>Your Filters</b></p>
             <p class="lead">
               ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper
               facilisis vulputate. Sed auctor
@@ -228,7 +256,9 @@
         </div>
         <div class="share-text">
           <div class="share-title">
-            <h2>Share instantly</h2>
+            <h2 style="font-family: 'Montserrat'; font-weight: 600">
+              Share instantly
+            </h2>
             <p>
               Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu
               ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec
@@ -244,7 +274,6 @@
               <p>
                 Mauris euismod ultrices nisl sit amet luctus. Donec volutpat
                 arcu ullamcorper facilisis vulputate. Sed auctor pulvinar.
-                ornare. Donec gravida
               </p>
             </div>
             <!--END First element-->
@@ -286,7 +315,9 @@
     <section id="features">
       <div class="features-block">
         <div class="features-text">
-          <h1><b>New Features</b></h1>
+          <h1 style="font-family: 'Montserrat'; font-weight: 600">
+            New Features
+          </h1>
           <p>
             Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu
             ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec
@@ -419,7 +450,9 @@
     <!--Taken wtih ama-->
     <section id="taken">
       <div class="taken-block">
-        <h1>Taken with ama</h1>
+        <h1 style="font-family: 'Montserrat'; font-weight: 600">
+          Taken with ama
+        </h1>
         <p>
           Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu
           ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec
@@ -557,17 +590,19 @@
           <!-- Правий контейнер -->
           <div class="col-md-7 d-flex align-items-center">
             <div class="download-rigth">
-              <h1>Believe me, you don’t wanna miss this app.</h1>
+              <h1>Believe me,</h1>
+              <h1>you don’t wanna</h1>
+              <h1>miss this app.</h1>
               <p>- Newyork Times</p>
               <div class="btn-download row">
-                <div class="col-md-6" style="padding-right: 0px">
+                <div class="col-md-6" style="padding-right: 10px">
                   <a href="#">
                     <p>
                       <img src="img/icons/icon_AppStore.png" alt="" />App Store
                     </p>
                   </a>
                 </div>
-                <div class="col-md-6" style="padding-left: 0px">
+                <div class="col-md-6" style="padding-left: 10px">
                   <a href="#">
                     <p>
                       <img src="img/icons/icon_PlayStore.png" alt="" />Play
@@ -586,11 +621,13 @@
     <!--Compatibility-->
     <section id="compatibility">
       <div class="container-fluid" style="max-width: 1030px">
-        <h3><b>Compatibility</b></h3>
+        <h3 style="font-family: 'Montserrat'; font-weight: 600">
+          Compatibility
+        </h3>
         <hr />
         <div class="row">
-          <div class="iPhoneDevice col-md-6" style="padding-right: 0px">
-            <p><b>ISO</b></p>
+          <div class="iPhoneDevice col-md-6">
+            <p style="font-family: 'Montserrat'; font-weight: 600">iSO</p>
             <p>
               Requires iOS 6.0 or later. Compatible with iPhone, iPad, and iPod
               touch. This app is optimized for iPhone 5.
@@ -598,11 +635,9 @@
             <img src="img/iPhoneDevice.png" alt="iPhoneDevice" />
           </div>
           <div class="AndroidDevice col-md-6">
-            <p><b>Android</b></p>
-            <p>
-              Compatible with Android KitKat 4.4 or later. Support for x86
-              devices (i.e. Samsung Galaxy Tab 3 10.1).
-            </p>
+            <p style="font-family: 'Montserrat'; font-weight: 600">Android</p>
+            <p>Compatible with Android KitKat 4.4 or later.</p>
+            <p>Support for x86 devices (i.e. Samsung Galaxy Tab 3 10.1).</p>
             <img src="img/AndroidDevice.png" alt="AndroidDevice" />
           </div>
         </div>

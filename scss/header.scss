@@ -25,22 +25,45 @@ header{
                 font-weight: bold;
             }
             .menu-btn{
-                display: flex;
+               display: flex;
+                text-align: right; 
                 justify-content: space-between;
                 button {
-                    flex:1; text-align: center;
+                    position: relative;
+                    text-align: right;
+                    flex-grow: 1;
                     height: 100%;
                     background-color: #de5d5d;
                     font-size: 18px;
                     color: #ffffff;
                     font-weight: 400;
-                    padding-top: 10px; 
-                    box-sizing: border-box; /* Враховувати товщину границі у розрахунку висоти */
-                  
-                    &:hover {
-                      border-top: 6px solid #ffffff;
+                    box-sizing: border-box;
+                
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        height: 6px;
+                        top: 0;
+                        left: 0;
+                        width: 90%;
+                        background-color: #ffffff;
+                        transform: scaleX(0) translateX(50%);
+                        transform-origin: bottom;
+                    }
+                
+                    &:hover::before {
+                        transform: scaleX(1) translateX(30%);
+                    }
+                
+                    &.active::before {
+                        transform: scaleX(1) translateX(30%);
                     }
                 }
+                
+            }
+            .col-md-8{
+                flex: 0 0 800px;
+                max-width: 800px;
             }
         }
     }
