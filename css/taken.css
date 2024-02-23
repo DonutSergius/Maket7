@@ -56,7 +56,7 @@
 }
 #taken .image-block .img-block .img-dis .dis-left p {
   margin-left: 20px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 27px;
   color: #c2c2c2;
   font-weight: 400;
@@ -78,7 +78,7 @@
 #taken .image-block .img-block .img-dis .dis-rigth p {
   text-align: right;
   margin-right: 20px;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 27px;
   color: #f06464;
   font-weight: 400;
@@ -100,6 +100,19 @@
   #taken .image-block .img-block .img-dis {
     padding-top: 15px;
     height: 60px;
+  }
+  #taken .image-block .img-block .img-dis .dis-rigth svg {
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: 5px;
+  }
+  #taken .image-block .img-block .img-dis .dis-rigth p {
+    text-align: right;
+    margin-right: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
   }
 }
 @media (max-width: 1300px) {
@@ -192,7 +205,7 @@
 }
 @media (max-width: 1000px) {
   #taken {
-    height: 860px;
+    height: 890px;
   }
   #taken .image-block {
     flex-wrap: wrap;
@@ -208,6 +221,9 @@
   }
 }
 @media (max-width: 950px) {
+  #taken {
+    height: 880px;
+  }
   #taken .taken-block h1 {
     font-size: 40px;
   }
