@@ -32,14 +32,14 @@
 
         
         .img-block{
-            width: 500px;
+            width: 25%;
             height: 519px;
             transition: transform 0.3s ease-in-out;
             .img-content{
                 width: 100%;
                 height: 100%;
                 overflow-y: visible;
-                background-size: cover; /* або contain, залежно від вашого бажання */
+                background-size: cover;
                 background-position: left center;
                 background-repeat: no-repeat;         
             }
@@ -70,7 +70,6 @@
                     svg{
                         width: 30px; 
                         height: 30px;
-                        margin-left: auto;
                         margin-right: 5px;
                         &:hover,
                         &.click{
@@ -125,21 +124,23 @@
                     height: 60px;
                     .dis-left{
                         p{
-                            font-size: 16px;
-                            line-height: 20px;
+                            margin-top: 5px;
+                            font-size: 14px;
+                            line-height: 18px;
                         }
                     }
                     .dis-rigth{
+                        width: 80px;
                         svg{
-                            width: 26px; 
-                            height: 26px;
+                            width: 25px; 
+                            height: 25px;
                             margin-left: auto;
                             margin-right: 5px;
                         }
                         p{
                             text-align: right;
                             margin-right: 20px;
-                            font-size: 20px;
+                            font-size: 18px;
                             line-height: 24px;
                             font-weight: 400;
                         }
@@ -172,24 +173,20 @@
                     height: 50px;
                     .dis-left{
                         p{
+                            margin-top: 0px;
                             margin-left: 10px;
-                            font-size: 16px;
-                            line-height: 20px;
                         }
                     }
                     .dis-rigth{
+                        margin-left: auto;
                         svg{
                             width: 26px; 
                             height: 26px;
-                            margin-left: auto;
                             margin-right: 5px;
                         }
                         p{
                             text-align: right;
                             margin-right: 10px;
-                            font-size: 20px;
-                            line-height: 24px;
-                            font-weight: 400;
                         }
                     }
                 }
@@ -209,10 +206,25 @@
             p{
                 line-height: 22px;
             }
+            .img-block{
+                .img-dis{
+                    height: 55px;
+                }
+            }
         }
+    }
+}
+
+@media(max-width:1000px){
+    #taken{
+       height: 845px;
         .image-block{
-            #taken_photo_2{
-                display: none;
+            flex-wrap: wrap;
+            .img-block{
+                width: 50%;
+                .img-dis{
+                    height: 52px;
+                }
             }
         }
     }
@@ -220,7 +232,7 @@
 
 @media(max-width: 800px){
     #taken{
-        height: 502px;
+        height: 800px;
         .taken-block{
             width: 100%;
             padding: 40px 30px ;
@@ -230,17 +242,12 @@
                 line-height: 20px;
             }
         }
-        .image-block{
-            #taken_photo_1{
-                display: none;
-            }
-        }
     }
 }
 
 @media(max-width: 550px){
     #taken{
-        height: auto;
+        height: 1395px;
         .taken-block{
             width: 100%;
             padding: 40px 30px ;
@@ -255,18 +262,22 @@
         .image-block{
             .img-block{
                 width: 100%;
-            }
-            #taken_photo_4{
-                display: none;
+                .img-dis{
+                    height: 52px;
+                }
             }
         }
     }
 }
 
-.test{
-    position: relative;
-    z-index: 400;
-    background-color: #db3939;
-    height: 400px;
-    width: 100%;
+@media(max-width: 500px){
+    #taken{
+        height: 1415px;
+    }
+}
+
+@media(max-width: 350px){
+    #taken{
+        height: 1435px;
+    }
 }
