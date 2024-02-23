@@ -172,7 +172,7 @@
 }
 @media (max-width: 1070px) {
   #taken {
-    height: 543px;
+    height: 550px;
   }
   #taken .taken-block {
     width: 600px;
@@ -180,7 +180,7 @@
     margin-right: auto;
   }
   #taken .taken-block h1 {
-    font-size: 40px;
+    font-size: 48px;
   }
   #taken .taken-block p {
     line-height: 22px;
@@ -206,25 +206,35 @@
     height: 60px;
   }
 }
+@media (max-width: 950px) {
+  #taken .taken-block h1 {
+    font-size: 40px;
+  }
+}
 @media (max-width: 800px) {
   #taken {
-    height: 810px;
+    height: 820px;
   }
   #taken .taken-block {
     width: 100%;
     padding: 40px 30px;
     padding-bottom: 60px;
   }
-  #taken .taken-block h1 {
-    font-size: 36px;
-  }
   #taken .taken-block p {
     line-height: 20px;
   }
 }
+@media (max-width: 600px) {
+  #taken .taken-block h1 {
+    font-size: 30px;
+  }
+  #taken .taken-block p {
+    font-size: 16px;
+  }
+}
 @media (max-width: 550px) {
   #taken {
-    height: 1450px !important;
+    height: 1415px;
   }
   #taken .taken-block {
     width: 100%;
@@ -251,9 +261,14 @@
     height: 1415px;
   }
 }
+@media (max-width: 440px) {
+  #taken {
+    height: 1430px;
+  }
+}
 @media (max-width: 350px) {
   #taken {
-    height: 1435px;
+    height: 1450px;
   }
 }
 
