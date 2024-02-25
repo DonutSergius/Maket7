@@ -170,20 +170,17 @@
 
 @media(max-width: 1170px){
     #taken{
-        height: 588px;
+        height: max-content;
         .taken-block{
             margin-bottom: 20px;
             padding-bottom: 60px;
+            width: 100%;
         }
         .image-block{
-            height: 300px;
-
             .img-block{
-                height: 300px;
-
                 &:hover,
                 &.click {
-                    transform: translateY(-60px);
+                    transform: translateY(-50px);
                 }
                 .img-dis{
                     padding-top: 10px;
@@ -214,31 +211,12 @@
 
 @media(max-width:1070px){
     #taken{
-        height: 580px;
-        .taken-block{
-            width: 600px;
-            margin: 0;
-            margin-bottom: 20px;
-            margin-right: auto;
-            h1{font-size: 48px;}
-            p{
-                line-height: 22px;
-            }
-            .img-block{
-                .img-dis{
-                    height: 60px;
-                }
-            }
-        }
-    }
-}
-
-@media(max-width:1000px){
-    #taken{
-       height: 890px;
+        height: max-content;
         .image-block{
+            height: 600px;
             flex-wrap: wrap;
             .img-block{
+                height: 300px;
                 width: 50%;
                 &:hover,
                 &.click {
@@ -254,7 +232,6 @@
 
 @media(max-width: 950px){
     #taken{
-        height: 880px;
         .taken-block{
             h1{
                 font-size: 40px;
@@ -265,7 +242,6 @@
 
 @media(max-width: 800px){
     #taken{
-        height: 840px;
         .taken-block{
             width: 100%;
             padding: 40px 30px ;
@@ -291,7 +267,6 @@
 
 @media(max-width: 550px){
     #taken{
-        height: 1415px;
         .taken-block{
             width: 100%;
             padding: 40px 30px ;
@@ -304,30 +279,14 @@
             }
         }
         .image-block{
+            height: 1200px;
             .img-block{
                 width: 100%;
+                height: 300px;
                 .img-dis{
                     height: 52px;
                 }
             }
         }
-    }
-}
-
-@media(max-width: 500px){
-    #taken{
-        height: 1430px;
-    }
-}
-
-@media(max-width:440px){
-    #taken{
-        height: 1450px;
-    }
-}
-
-@media(max-width: 350px){
-    #taken{
-        height: 1470px;
     }
 }

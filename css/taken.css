@@ -147,20 +147,16 @@
 }
 @media (max-width: 1170px) {
   #taken {
-    height: 588px;
+    height: -moz-max-content;
+    height: max-content;
   }
   #taken .taken-block {
     margin-bottom: 20px;
     padding-bottom: 60px;
-  }
-  #taken .image-block {
-    height: 300px;
-  }
-  #taken .image-block .img-block {
-    height: 300px;
+    width: 100%;
   }
   #taken .image-block .img-block:hover, #taken .image-block .img-block.click {
-    transform: translateY(-60px);
+    transform: translateY(-50px);
   }
   #taken .image-block .img-block .img-dis {
     padding-top: 10px;
@@ -185,32 +181,15 @@
 }
 @media (max-width: 1070px) {
   #taken {
-    height: 580px;
-  }
-  #taken .taken-block {
-    width: 600px;
-    margin: 0;
-    margin-bottom: 20px;
-    margin-right: auto;
-  }
-  #taken .taken-block h1 {
-    font-size: 48px;
-  }
-  #taken .taken-block p {
-    line-height: 22px;
-  }
-  #taken .taken-block .img-block .img-dis {
-    height: 60px;
-  }
-}
-@media (max-width: 1000px) {
-  #taken {
-    height: 890px;
+    height: -moz-max-content;
+    height: max-content;
   }
   #taken .image-block {
+    height: 600px;
     flex-wrap: wrap;
   }
   #taken .image-block .img-block {
+    height: 300px;
     width: 50%;
   }
   #taken .image-block .img-block:hover, #taken .image-block .img-block.click {
@@ -221,17 +200,11 @@
   }
 }
 @media (max-width: 950px) {
-  #taken {
-    height: 880px;
-  }
   #taken .taken-block h1 {
     font-size: 40px;
   }
 }
 @media (max-width: 800px) {
-  #taken {
-    height: 840px;
-  }
   #taken .taken-block {
     width: 100%;
     padding: 40px 30px;
@@ -250,9 +223,6 @@
   }
 }
 @media (max-width: 550px) {
-  #taken {
-    height: 1415px;
-  }
   #taken .taken-block {
     width: 100%;
     padding: 40px 30px;
@@ -266,27 +236,14 @@
     line-height: 20px;
     width: 100%;
   }
+  #taken .image-block {
+    height: 1200px;
+  }
   #taken .image-block .img-block {
     width: 100%;
+    height: 300px;
   }
   #taken .image-block .img-block .img-dis {
     height: 52px;
   }
-}
-@media (max-width: 500px) {
-  #taken {
-    height: 1430px;
-  }
-}
-@media (max-width: 440px) {
-  #taken {
-    height: 1450px;
-  }
-}
-@media (max-width: 350px) {
-  #taken {
-    height: 1470px;
-  }
-}
-
-/*# sourceMappingURL=taken.css.map */
+}/*# sourceMappingURL=taken.css.map */
