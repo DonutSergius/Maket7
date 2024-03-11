@@ -31,16 +31,8 @@
       rel="stylesheet"
     />
     <!--Style-->
-    <link rel="stylesheet" href="css/baner.css" />
-    <link rel="stylesheet" href="css/why_ama.css" />
     <link rel="stylesheet" href="css/null.css" />
-    <link rel="stylesheet" href="css/share.css" />
-    <link rel="stylesheet" href="css/features.css" />
-    <link rel="stylesheet" href="css/taken.css" />
-    <link rel="stylesheet" href="css/download.css" />
-    <link rel="stylesheet" href="css/compatibility.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <title>Ama</title>
   </head>
@@ -51,53 +43,32 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-2" style="padding: 0px">
-            <p style="font-family: 'Montserrat'; font-weight: 600">
+            <p>
               <a href="">ama</a>
             </p>
           </div>
-          <div
-            class="menu-btn col-md-8 align-items-right"
-            style="padding: 0px; flex-wrap: nowrap"
-          >
-            <button
-              data-section="baner"
-              onclick="scrollToSection('baner')"
-              style="margin-left: 0px; z-index: 700"
-            >
+          <div class="menu-btn col-md-8 align-items-right">
+            <button data-section="baner" onclick="scrollToSection('baner')">
               Hello
             </button>
-            <button
-              data-section="why_ama"
-              onclick="scrollToSection('why_ama')"
-              style="z-index: 600"
-            >
+            <button data-section="why_ama" onclick="scrollToSection('why_ama')">
               Overview
             </button>
-            <button
-              data-section="share"
-              onclick="scrollToSection('share')"
-              style="z-index: 500"
-            >
+            <button data-section="share" onclick="scrollToSection('share')">
               Share
             </button>
             <button
               data-section="features"
               onclick="scrollToSection('features')"
-              style="z-index: 400"
             >
               Features
             </button>
-            <button
-              data-section="taken"
-              onclick="scrollToSection('taken')"
-              style="z-index: 300"
-            >
+            <button data-section="taken" onclick="scrollToSection('taken')">
               Gallery
             </button>
             <button
               data-section="download"
               onclick="scrollToSection('download')"
-              style="z-index: 200"
             >
               Download
             </button>
@@ -591,14 +562,14 @@
     <section id="download">
       <div class="container-fluid" style="width: 1030px; padding: 0px 30px">
         <div class="row">
-          <!-- Лівий контейнер -->
+          <!-- Left-->
           <div class="download-left col-md-5 d-flex align-items-center">
             <div class="shadow-div">
               <img src="img/icons/icon_ama.png" alt="icon_ama" />
             </div>
           </div>
 
-          <!-- Правий контейнер -->
+          <!-- Rigth -->
           <div class="col-md-7 d-flex align-items-center">
             <div class="download-rigth">
               <h1>Believe me,</h1>
@@ -609,15 +580,20 @@
                 <div class="col-md-6" style="padding-right: 10px">
                   <a href="#">
                     <p>
-                      <img src="img/icons/icon_AppStore.png" alt="" />App Store
+                      <img
+                        src="img/icons/icon_AppStore.png"
+                        alt="icon_AppStore"
+                      />App Store
                     </p>
                   </a>
                 </div>
                 <div class="col-md-6" style="padding-left: 10px">
                   <a href="#">
                     <p>
-                      <img src="img/icons/icon_PlayStore.png" alt="" />Play
-                      Store
+                      <img
+                        src="img/icons/icon_PlayStore.png"
+                        alt="icon_PlayStore"
+                      />Play Store
                     </p>
                   </a>
                 </div>
@@ -631,7 +607,7 @@
     <!---->
     <!--Compatibility-->
     <section id="compatibility">
-      <div class="container-fluid" style="max-width: 1030px">
+      <div class="container-fluid">
         <h3 style="font-family: 'Montserrat'; font-weight: 600">
           Compatibility
         </h3>
@@ -699,9 +675,8 @@
     document
       .getElementById("submit-email")
       .addEventListener("click", function () {
-        // Отримуємо значення поля вводу
         var emailValue = emailInput.value.trim();
-        // Перевірка, чи поле вводу не порожнє та відповідає формату email
+
         if (emailValue === "") {
           showNotification("Please enter your email.");
         } else if (!isValidEmail(emailValue)) {
@@ -711,12 +686,11 @@
         }
       });
 
-    // Функція для перевірки правильного формату email
     function isValidEmail(email) {
       var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       return emailRegex.test(email);
     }
-    // Функція для відображення повідомлення
+
     function showNotification(message, isSuccess) {
       var notification = document.getElementById("notification");
       var needpad = document.getElementById("needpads");
@@ -726,7 +700,6 @@
       needpad.style.paddingTop = "15px";
       notification.style.color = isSuccess ? "green" : "red";
 
-      // Очищаємо повідомлення через 3 секунди
       setTimeout(function () {
         notification.textContent = "";
         emailInput.value = "";

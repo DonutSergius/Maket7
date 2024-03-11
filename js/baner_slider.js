@@ -34,4 +34,4 @@ $(document).ready(function () {
       $(".slider-btn button").removeClass("active");
       $("#" + buttonId).addClass("active");
     }
-  });
+});

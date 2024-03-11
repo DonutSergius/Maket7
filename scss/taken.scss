@@ -1,12 +1,15 @@
+@import 'variable';
+@import 'mixin';
+
 #taken{
     position: relative;
     height: 821px;
-    background-color: #ffffff;
+    background-color: $white;
     width: 100%;
     z-index: 300;
     .taken-block{
         margin: 0 auto;
-        width:1030px;
+        width: $desktops;
         padding: 70px 30px;
         margin-bottom: 30px;
         h1{
@@ -16,9 +19,9 @@
             margin-bottom: 20px;
         }
         p{
-            font-size: 18px;
+            font-size: $fontB;
             line-height: 27px;
-            color: #666666;
+            color: $blackgray;
             font-weight: 400;
             width: 470px;
         }
@@ -58,7 +61,7 @@
                 .dis-left{
                     p{
                         margin-left: 20px;
-                        font-size: 16px;
+                        font-size: $fontM;
                         line-height: 27px;
                         color: #c2c2c2;
                         font-weight: 400;
@@ -105,7 +108,7 @@
                 transform: translateY(-80px);
             }
                 .img-dis{
-                    padding-top: 15px;
+                    padding-top: $paddingM;
                     height: 60px;
                     .dis-rigth{
                         svg{
@@ -117,7 +120,7 @@
                         p{
                             text-align: right;
                             margin-right: 20px;
-                            font-size: 16px;
+                            font-size: $fontM;
                             line-height: 24px;
                             font-weight: 400;
                         }
@@ -137,12 +140,12 @@
                 transform: translateY(-80px);
             }
                 .img-dis{
-                    padding-top: 10px;
+                    padding-top: $paddingS;
                     height: 60px;
                     .dis-left{
                         p{
                             margin-top: 5px;
-                            font-size: 14px;
+                            font-size: $fontS;
                             line-height: 18px;
                         }
                     }
@@ -156,8 +159,8 @@
                         }
                         p{
                             text-align: right;
-                            margin-right: 20px;
-                            font-size: 16px;
+                            margin-right: $paddingB;
+                            font-size: $fontM;
                             line-height: 24px;
                             font-weight: 400;
                         }
@@ -183,12 +186,12 @@
                     transform: translateY(-50px);
                 }
                 .img-dis{
-                    padding-top: 10px;
+                    padding-top: $paddingS;
                     height: 50px;
                     .dis-left{
                         p{
                             margin-top: 0px;
-                            margin-left: 10px;
+                            margin-left: $paddingS;
                         }
                     }
                     .dis-rigth{
@@ -200,7 +203,7 @@
                         }
                         p{
                             text-align: right;
-                            margin-right: 10px;
+                            margin-right: $paddingS;
                         }
                     }
                 }
@@ -259,7 +262,7 @@
         .taken-block{
             h1{font-size: 30px;}
             p{
-                font-size: 16px;
+                font-size: $fontM;
             }
         }
     }
@@ -269,11 +272,11 @@
     #taken{
         .taken-block{
             width: 100%;
-            padding: 40px 30px ;
+            padding: 40px 10px ;
             padding-bottom: 60px;
             h1{font-size: 30px;}
             p{
-                font-size: 16px;
+                font-size: $fontM;
                 line-height: 20px;
                 width: 100%;
             }

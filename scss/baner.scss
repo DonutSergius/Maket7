@@ -1,3 +1,6 @@
+@import 'variable';
+@import 'mixin';
+
 body {
     overflow-x: hidden;
 }
@@ -5,7 +8,7 @@ body {
 #baner {
     margin-top: 50px;
     height: 787px;
-    background-color: #de5d5d;
+    background-color: $pink;
     .baner-slider {
         padding-top: 50px;
     }
@@ -36,15 +39,15 @@ body {
             margin: 0px 3px;
             border-radius: 6px;
             background-color: #ffffff00;
-            border: 2px solid #ffffff;
+            border: 2px solid $white;
             &:hover {
                 width: 12px;
                 height: 12px;
                 border-radius: 6px;
-                background-color: #ffffff;
+                background-color: $white;
             }
             &.active{
-                background-color: #ffffff;
+                background-color: $white;
             }
         }
     }
@@ -52,7 +55,7 @@ body {
 
 .content {
     background-color: rgba(0, 255, 255, 0);
-    color: #ffffff;
+    color: $white;
     width: 100%;
     height: 787px;
     margin: auto;
@@ -66,14 +69,12 @@ body {
     top: 0;
 
     h1{
-        font-size: 90px;
-        color: #ffffff;
-        font-weight: 400;
+        @include text-properties(90px, $white, 600);
     }
 
     .btn-download {
         font-size: 30px;
-        color: #ffffff;
+        color: $white;
         font-weight: 400;
         display: flex;
         margin-top: 60px;
@@ -89,13 +90,13 @@ body {
             }
             a{
                 text-decoration: none;
-                color:#ffffff;
+                color:$white;
             }
             p {
                 border-radius: 5px;
                 background-color: rgba(6,53,80,0);
-                border: 3px solid #ffffff;
-                padding: 10px 20px;
+                border: 3px solid $white;
+                padding: $paddingS $paddingB;
                 text-align: center;
 
                 &:hover{
@@ -106,11 +107,11 @@ body {
         }
 
         .right {
-            margin-right: 15px;
+            margin-right: $paddingM;
         }
 
         .left {
-            margin-left: 15px;
+            margin-left: $paddingM;
         }
     }
 }
@@ -165,7 +166,7 @@ body {
         }
 
         .btn-download{
-            margin-top: 20px;
+            margin-top: $paddingB;
             font-size: 22px;
             .right,
             .left {
@@ -196,7 +197,7 @@ body {
         }
 
         .btn-download{
-            margin-top: 20px;
+            margin-top: $paddingB;
             font-size: 20px;
             .right,
             .left {
@@ -230,8 +231,8 @@ body {
         }
 
         .btn-download{
-            margin-top: 20px;
-            font-size: 18px;
+            margin-top: $paddingB;
+            font-size: $fontB;
             .right,
             .left {
                 img{
@@ -244,11 +245,11 @@ body {
             }
 
             .right {
-                margin-right: 10px;
+                margin-right: $paddingS;
             }
     
             .left {
-                margin-left: 10px;
+                margin-left: $paddingS;
             }
             
         }
@@ -269,7 +270,7 @@ body {
         height: 250px;
         .back-img{
             img{
-                width:300px;
+                width: $phone;
             }
         }
     }
@@ -281,8 +282,8 @@ body {
         }
 
         .btn-download{
-            margin-top: 20px;
-            font-size: 16px;
+            margin-top: $paddingB;
+            font-size: $fontM;
             .right,
             .left {
                 img{

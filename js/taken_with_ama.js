@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         imgContent.addEventListener("touchmove", function (event) {
-          // Запобігаємо прокрутці сторінки
+       
           event.preventDefault();
         });
 
@@ -18,10 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
           touchEndY = event.changedTouches[0].clientY;
 
           if (touchEndY < touchStartY) {
-            // Підняти блок, якщо виконані умови підняття
+ 
             imgContent.closest(".img-block").classList.toggle("click");
           } else {
-            // Опустити блок, якщо не виконується умова підняття
+  
             imgContent.closest(".img-block").classList.remove("click");
           }
         });
@@ -32,10 +32,10 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 
-  // Отримуємо елементи DOM для кожного блоку
+
 const imgBlocks = document.querySelectorAll('.img-block');
 
-// Ітеруємося по кожному блоку та додаємо обробник подій
+
 imgBlocks.forEach(imgBlock => {
   const likeSvg = imgBlock.querySelector('.dis-rigth svg');
   const likeCount = imgBlock.querySelector('#like-count');

@@ -1,25 +1,26 @@
+@import 'variable';
+@import 'mixin';
+
 #compatibility{
     height: 444px;
-    background-color: #e7e7e7;
+    background-color: $whitegray;
     display: flex;
     align-items: center;
     .container-fluid{
+        max-width: $desktops;
         padding: 0px 30px;
         h3{
-            font-size: 24px;
-            color: #666666;
-            font-weight: 400;
+            @include text-properties(24px, $blackgray, 600);
         }
         hr{
-            margin: 20px 0px;
+            margin: $paddingB 0px;
             height: 2px; 
-            background-color: #cbcbcb;
+            background-color: $whitegray;
         }
         p{
+            @include text-properties($fontM, $blackgray, 400);
             width: 95%;
-            font-size: 16px;
             line-height: 24px;
-            color: #666666;
         }
         img{
             margin-top: 30px;
@@ -31,24 +32,20 @@
     #compatibility{
         .container-fluid{
             h3{
-                font-size: 20px;
-                color: #666666;
-                font-weight: 400;
+                @include text-properties(20px, $blackgray, 600);
             }
             hr{
-                margin: 15px 0px;
+                margin: $paddingM 0px;
                 height: 2px; 
-                background-color: #cbcbcb;
+                background-color: $whitegray;
             }
             p{
-                font-size: 14px;
+                @include text-properties($fontS, $blackgray, 400);
                 line-height: 20px;
-                color: #666666;
-                font-weight: 400;
             }
             img{
-                margin-top: 15px;
-                margin-bottom: 20px;
+                margin-top: $paddingM;
+                margin-bottom: $paddingB;
                 max-width: 270px;
                 height: auto;
             }

@@ -1,47 +1,46 @@
+@import 'variable';
+@import 'mixin';
+
 footer{
     height: 225px;
     background-color: #f4f4f4;
     .container-fluid{
-        max-width: 1170px;
+        max-width: $desktop;
         .row{
             height: 225px;
             margin: 0 auto;
         }
         .first-coloum{
             p{
-                font-size: 18px;
-                color: #666666;
-                font-weight: 400;
+                @include text-properties($fontB, $blackgray, 400);
             }
         }
         .second-coloum{
             p{
-                font-size: 16px;
+                @include text-properties($fontM, $blackgray, 400);
                 line-height: 24px;
-                color: #666666;
-                font-weight: 400;
             }
             .email-input{
-                margin-top: 15px;
+                margin-top: $paddingM;
                 input{
                     width: 311px;
                     height: 48px;
-                    padding: 0 20px;
+                    padding: 0 $paddingB;
                     border-radius: 5px;
                     background-color: #f4f4f4;
-                    border: 1px solid #a3a3a3;
-                    font-size: 16px;
+                    border: 1px solid $gray;
+                    font-size: $fontM;
                     line-height: 24px;
-                    color: #666666;
+                    color: $blackgray;
                     font-weight: 400;
                 }
                 button{
-                    margin-left: 10px;
+                    margin-left: $paddingS;
                     width: 101px;
                     height: 48px;
                     border-radius: 5px;
-                    background-color: #f06464;
-                    font-size: 16px;
+                    background-color: $pink;
+                    font-size: $fontM;
                     line-height: 24px;
                     color: #f4f4f4;
                     font-weight: 400;
@@ -57,7 +56,7 @@ footer{
 @media(max-width:1200px){
     footer{
         .container-fluid{
-            max-width: 900px;
+            max-width: $table;
         }
     }
 }
@@ -69,27 +68,27 @@ footer{
             max-width: 600px;
            }
            .first-coloum{
-            max-width: 300px;
+            max-width: $phone;
             p{
-                font-size: 16px;
+                font-size: $fontM;
             }
            }
            .second-coloum{
             max-width: 300px;
             p{
-                font-size: 14px;
+                font-size: $fontS;
                 line-height: 20px;
             }
             .email-input{
                 input{
                     max-width: 220px;
-                    padding: 0px 10px;
+                    padding: 0px $paddingS;
                     height: 40px;
-                    font-size: 14px;
+                    font-size: $fontS;
                 }
                 button{
                     height: 40px;
-                    font-size: 14px;
+                    font-size: $fontS;
                 }
             }
            }
@@ -101,13 +100,13 @@ footer{
     footer{
         text-align: center;
         .container-fluid{
-            max-width: 300px;
+            max-width: $phone;
             display: flex;
             align-items: center;
             .row{
                 margin: 0 auto;
                 height: 150px;
-                max-width: 300px;
+                max-width: $phone;
 
             }
             .first-coloum{
@@ -115,7 +114,7 @@ footer{
                 p{
                     text-align: center;
                     width:300px;
-                    font-size: 16px;
+                    font-size: $fontM;
                 }
             }
             .second-coloum{

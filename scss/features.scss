@@ -1,14 +1,17 @@
+@import 'variable';
+@import 'mixin';
+
 #features{
     width: 100%;
     height: 803px;
-    background-color: #313131;
+    background-color: $dark;
     position: relative;
     z-index: 200;
 
     .features-block{
         display: flex;
         margin: 0 auto;
-        width: 1030px;
+        width: $desktops;
         height: 803px;
         align-items:start;
 
@@ -17,23 +20,19 @@
             width: calc(530px);
             align-self: center;
             h1{
-                font-size: 48px;
-                color: #ffffff;
-                font-weight: 400;
-                padding-bottom: 20px;
+                @include text-properties(48px, $white, 600);
+                padding-bottom: $paddingB;
             }
             p{
-                font-size: 18px;
+                @include text-properties($fontB, $gray, 400);
                 line-height: 27px;
-                color: #aeaeae;
-                font-weight: 400;
                 padding-bottom: 60px ;
             }  
             .features-container{
                 width: 470px;
                 height: 232px;
                 border-radius: 5px;
-                background-color: #ffffff;
+                background-color: $white;
 
                 .features-dis{
                     .features-elem{
@@ -43,24 +42,20 @@
                         img{
                             width: 89px;
                             height: 89px;
-                            margin-top: 10px;
+                            margin-top: $paddingS;
                             margin-right: 30px;
                         }
                         .discription{
                             h3{
-                                font-size: 18px;
-                                line-height: 24px;
-                                color: #cc5858;
-                                font-weight: 400;
+                                @include text-properties($fontB, $pink, 400);
+                                line-height: 24px;                                
                                 margin-bottom: 5px;
                             }
                             p{
+                                @include text-properties($fontM, $blackgray, 400);
                                 padding: 0px;
-                                padding-right: 20px;
-                                font-size: 16px;
-                                line-height: 24px;
-                                color: #666666;
-                                font-weight: 400;
+                                padding-right: $paddingB;
+                                line-height: 24px;                                
                             }
                         }
                     }
@@ -74,7 +69,7 @@
                     padding: 0px 30px;
                     display: grid;
                     align-items: center;
-                    background-color: #f06464;
+                    background-color: $pink;
                     .features-btn{
                         width: 100%;
                         button {
@@ -83,15 +78,15 @@
                             margin: 0px 3px;
                             border-radius: 6px;
                             background-color: #ffffff00;
-                            border: 2px solid #ffffff;
+                            border: 2px solid $white;
                             &:hover {
                                 width: 12px;
                                 height: 12px;
                                 border-radius: 6px;
-                                background-color: #ffffff;
+                                background-color: $white;
                             }
                             &.active{
-                                background-color: #ffffff;
+                                background-color: $white;
                             }
                         }
                     }
@@ -114,7 +109,7 @@
         height: 670px;
         .features-block{
             height: 670px;
-            width: 900px;
+            width: $table;
             .features-text{
                 width: 450px;
                 padding: 0px;
@@ -144,7 +139,7 @@
                     font-size: 40px;
                 }
                 p{
-                    font-size: 16px;
+                    font-size: $fontB;
                 }
                 width: 470px;
                 padding: 0px;
@@ -160,30 +155,30 @@
         height: 950px;
         overflow-y: hidden;
         .features-block{
-            width: 300px;
+            width: $phone;
             display: block;
             .features-text{
-                width: 300px;
+                width: $phone;
                 padding: 0px;
                 padding-top: 30px;
                 margin: 0px auto;
                 h1{
-                    padding: 0px 10px;
+                    padding: 0px $paddingS;
                     font-size: 30px;
                     color: #ffffff;
                     font-weight: 400;
-                    padding-bottom: 20px;
+                    padding-bottom: $paddingB;
                 }
                 p{
-                    padding: 0px 10px;
-                    font-size: 16px;
+                    padding: 0px $paddingS;
+                    font-size: $fontM;
                     line-height: 20px;
                     color: #aeaeae;
                     font-weight: 400;
                     padding-bottom: 30px ;
                 }  
                 .features-container{
-                    width: 300px;
+                    width: $phone;
                     height: 207px;
                     .features-dis{
                         .features-elem{
@@ -194,24 +189,24 @@
                             .discription{
                                 p{
                                     padding: 0px;
-                                    font-size: 16px;
+                                    font-size: $fontM;
                                 line-height: 18px;
                                 }
                             }
-                            padding: 15px;
+                            padding: $paddingM;
                         }
                     }
                     .features-slider-btn{
-                        padding: 0px 15px;
+                        padding: 0px $paddingM;
                         height: 40px;
                     }
                 }
             }
             .features-img{
                 margin: 0px auto;
-                width: 300px;
+                width: $phone;
                 img{
-                    width: 300px;
+                    width: $phone;
                     height: auto;
                     padding-top: 30px;
                 }

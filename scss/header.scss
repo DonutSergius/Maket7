@@ -1,12 +1,15 @@
+@import 'variable';
+@import 'mixin';
+
 header{
     margin-top: -50px;
     position: fixed;
     z-index: 1000;
     width:100%;
     height: 100px;
-    background-color: #de5d5d;
+    background-color: $pink;
     .container-fluid{
-        max-width: 1170px;
+        max-width: $desktop;
         padding: 0px;
         .row{
             max-width: 100%;
@@ -15,30 +18,28 @@ header{
             margin: 0px;
             a{
                 text-decoration: none;
-                color:#ffffff;
+                @include text-properties(60px, $white, 600);
             }
             p{
-                margin-top: 20px;
-                font-size: 60px;
+               
+                margin-top: $paddingB;
                 line-height: 60px;
-                color: #ffffff;
-                font-weight: bold;
+                font-family: 'Montserrat';
             }
             .menu-btn{
                display: flex;
                 text-align: right; 
                 justify-content: space-between;
+                padding: 0px; flex-wrap: nowrap;
                 button {
+                    border: 0;
                     position: relative;
                     text-align: right;
                     flex-grow: 1;
                     height: 100%;
-                    background-color: #de5d5d;
-                    font-size: 18px;
-                    color: #ffffff;
-                    font-weight: 400;
+                    background-color: $pink;
                     box-sizing: border-box;
-                
+                    @include text-properties($fontB, $white, 400);
                     &::before {
                         content: '';
                         position: absolute;
@@ -46,7 +47,7 @@ header{
                         top: 0;
                         left: 0;
                         width: 90%;
-                        background-color: #ffffff;
+                        background-color: $white;
                         transform: scaleX(0) translateX(50%);
                         transform-origin: bottom;
                     }
@@ -114,17 +115,16 @@ header{
 .backcolor {
     width: 70px;
     height: 70px;
-    background-color: #de5d5d;
+    background-color: $pink;
     display: none;
     justify-content: center;
     align-items: center;  
     button{
-        color:#ffffff;
-        background-color: #de5d5d;
-        margin: 10px 0px;
-        padding:10px 20px;
+        @include text-properties($fontB, $white, 400);   
+        background-color: $pink;
+        margin: $paddingS 0px;
+        padding:$paddingS $paddingB;
         border-radius: 70px;
-        font-size: 16px;
         border:none;
         box-shadow: none;
         &:hover{
@@ -141,7 +141,7 @@ header{
 .menu-button::before,
 .menu-button::after {
    display: block;
-   background-color: #ffffff;
+   background-color: $white;
    position: absolute;
    height: 3px;
    width: 30px;
@@ -211,7 +211,7 @@ header{
         padding: 0.5em 0;
         width: 100%;
         color: #ffffff;
-        background-color: #de5d5d;
+        background-color: $pink;
       }
 }
 
@@ -228,7 +228,7 @@ header{
     }
 
     .backcolor{
-        padding-left: 10px;
+        padding-left: $paddingS;
         width: 40px;
         height: 40px;
     }
@@ -271,7 +271,7 @@ header{
         margin: 0;
         padding: 0.5em 0;
         width: 100%;
-        color: #ffffff;
-        background-color: #de5d5d;
+        color: $white;
+        background-color: $pink;
       }
 }

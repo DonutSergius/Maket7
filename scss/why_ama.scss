@@ -1,12 +1,15 @@
+@import 'variable';
+@import 'mixin';
+
 #why_ama {
     position: relative;
     z-index: 100;
     height: 695px;
-    background-color: #ffffff;  
+    background-color: $white;  
     margin-top: -48px;
 
     .container{
-        max-width: 1170px !important;
+        max-width: $desktop !important;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -14,15 +17,13 @@
         align-items: center;
         height: 100%;
         h1{
-            font-size: 48px;
-            color: #3a3a3a;
-            font-weight: 400;
-            margin-bottom: 20px;
+            @include text-properties(48px, $darkgray, 400);
+            margin-bottom: $paddingB;
         }
     }
 
     .why_ama-block {
-        background-color: #ffffff;
+        background-color: $white;
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -39,12 +40,10 @@
                 margin-bottom: 30px;
             }
             p {
+                @include text-properties($fontM, $blackgray, 400);
                 max-width: 255px;
                 margin: 0 auto;
-                font-size: 16px;
                 line-height: 24px;
-                color: #666666;
-                font-weight: 400;
                 text-align: center;
             }
 
@@ -60,7 +59,7 @@
         margin-top: -10px;
         .container {
             padding: 50px 0px;
-            width: 800px;
+            width: $table;
 
             h1 {
                 font-size: 48px;
@@ -88,7 +87,7 @@
 
                     p {
                         width: 250px;
-                        font-size: 16px;
+                        font-size: $fontM;
                         line-height: 18px;
                     }
                 }
@@ -101,7 +100,7 @@
 @media (max-width: 600px) {
     #why_ama {
         .container {
-            width: 300px !important;
+            width: $phone !important;
             h1{
                 font-size: 30px;
             }
@@ -114,7 +113,7 @@
 
                     p {
                         width: 250px;
-                        font-size: 16px;
+                        font-size: $fontM;
                         line-height: 18px;
                     }
                 }
@@ -131,6 +130,6 @@
 
 @media (min-width: 1200px) {
     .container {
-        max-width:1170px;
+        max-width:$desktop;
     }
 }

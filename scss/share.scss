@@ -1,3 +1,6 @@
+@import 'variable';
+@import 'mixin';
+
 #share {
     margin-top: -48px;
     height: 782px;
@@ -6,7 +9,7 @@
         padding-top: 48px;
         display: flex;
         height: 782px;
-        width: 1170px;
+        width: $desktop;
         margin: 0 auto;
         .share-img{
             img{
@@ -25,17 +28,13 @@
             .share-title{
                 max-width: 470px;
                 h2{
-                    font-size: 48px;
-                    color: #ffffff;
-                    margin-bottom: 15px;
+                    @include text-properties(48px, $white, 600);
+                    margin-bottom: $paddingM;
                 }
                 p{
-                    font-size: 18px;
-                    line-height: 27px;
-                    color: #aeaeae;
-                    font-weight: 400;
+                    @include text-properties($fontB, $gray, 400);
                 }
-                padding-bottom: 20px;
+                padding-bottom: $paddingB;
             }
 
             .share-slider{
@@ -46,18 +45,16 @@
                     width: 100%;
                     display: flex;
                     margin-top: auto;
-                    padding: 20px 0px;
+                    padding: $paddingB 0px;
                     position: relative;
                     img{
                         align-self: center;
                         padding-right: 30px;
                     }
                     p{
+                        @include text-properties($fontM, $gray, 400);
                         width: 250px;
-                        font-size: 16px;
                         line-height: 24px;
-                        color: #aeaeae;
-                        font-weight: 400;
                     }
                 }
             }
@@ -70,15 +67,15 @@
                     margin: 0px 3px;
                     border-radius: 6px;
                     background-color: #ffffff00;
-                    border: 2px solid #ffffff;
+                    border: 2px solid $white;
                     &:hover {
                         width: 12px;
                         height: 12px;
                         border-radius: 6px;
-                        background-color: #ffffff;
+                        background-color: $white;
                     }
                     &.active{
-                        background-color: #ffffff;
+                        background-color: $white;
                     }
                 }
             }
@@ -89,7 +86,7 @@
 @media(max-width: 1170px){
     #share{
         .share-block{
-            width:900px;
+            width: $table;
             .share-img{ 
                 img{
                     width: 400px;
@@ -168,14 +165,14 @@
         height: 900px;
         .share-block {
             height: 1200px;
-            width: 280px;
+            width: $phone;
             flex-direction: column-reverse;
             .share-img {
                 align-self: flex-end;
                 text-align: center;
                 margin: 0px auto;
                 img{
-                    width: 280px;
+                    width: $phone;
                     margin: 0;
                 }
             }
@@ -191,7 +188,7 @@
                     }
                 }
                 .share-slider{
-                    width: calc(280px);
+                    width: $phone;
                     .share-dis{
                         img{
                             align-self: center;
