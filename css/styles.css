@@ -279,7 +279,11 @@ body {
 #compatibility .container-fluid hr {
   margin: 20px 0px;
   height: 2px;
-  background-color: #e7e7e7;
+  background-color: #aeaeae;
+}
+#compatibility .container-fluid #name {
+  font-family: "Montserrat";
+  font-weight: 600;
 }
 #compatibility .container-fluid p {
   font-size: 16px;
@@ -322,6 +326,10 @@ body {
   width: 100%;
   height: 723px;
   background-color: #de5d5d;
+}
+#download .container-fluid {
+  width: 1030px;
+  padding: 0px 30px;
 }
 #download .download-left {
   height: 723px;
@@ -714,15 +722,24 @@ footer {
 }
 footer .container-fluid {
   max-width: 1170px;
+  padding: 0px;
+  height: 100%;
 }
 footer .container-fluid .row {
   height: 225px;
   margin: 0 auto;
 }
+footer .container-fluid .first-coloum {
+  padding-left: 0px;
+  padding-right: 30px;
+}
 footer .container-fluid .first-coloum p {
   font-size: 18px;
   color: #666666;
   font-weight: 400;
+}
+footer .container-fluid .second-coloum {
+  padding: 0px;
 }
 footer .container-fluid .second-coloum p {
   font-size: 16px;
@@ -744,6 +761,8 @@ footer .container-fluid .second-coloum .email-input input {
   line-height: 24px;
   color: #666666;
   font-weight: 400;
+  position: relative;
+  z-index: 99;
 }
 footer .container-fluid .second-coloum .email-input button {
   margin-left: 10px;
@@ -1307,6 +1326,8 @@ header .container-fluid .row .col-md-8 {
   width: 25%;
   height: 510px;
   transition: transform 0.3s ease-in-out;
+  position: relative;
+  z-index: 400;
 }
 #taken .image-block .img-block .img-content {
   width: 100%;

@@ -15,7 +15,10 @@
         hr{
             margin: $paddingB 0px;
             height: 2px; 
-            background-color: $whitegray;
+            background-color: $gray;
+        }
+        #name{
+            font-family: 'Montserrat'; font-weight: 600;
         }
         p{
             @include text-properties($fontM, $blackgray, 400);
